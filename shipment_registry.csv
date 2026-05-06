@@ -1,0 +1,11 @@
+rfid_tag,goods_category,origin,destination,package_count,vehicle_id,driver_id
+RFID-001,Dry Goods,Pasig,Zamboanga,24,VH-001,DR-001
+RFID-002,Electronics,Davao,Cebu,40,VH-002,DR-002
+RFID-003,Perishable,Zamboanga,Quezon City,21,VH-003,DR-003
+RFID-004,Perishable,Cebu,Taguig,10,VH-004,DR-004
+RFID-005,Clothing,Zamboanga,Manila,39,VH-005,DR-005
+RFID-006,Perishable,Davao,Taguig,44,VH-006,DR-006
+RFID-007,Industrial,Manila,Zamboanga,19,VH-007,DR-007
+RFID-008,Dry Goods,Taguig,Cagayan de Oro,6,VH-008,DR-008
+RFID-009,Dry Goods,Manila,Pasig,32,VH-009,DR-009
+RFID-010,Perishable,Zamboanga,Davao,18,VH-010,DR-010

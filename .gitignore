@@ -1,0 +1,12 @@
+# Python virtual environment
+venv/
+
+# Claude workflow infrastructure
+.claude/
+
+# Jupyter auto-saves
+.ipynb_checkpoints/
+
+# Python compiled files
+__pycache__/
+*.pyc
