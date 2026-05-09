@@ -1,15 +1,15 @@
-# 🚚 Smart Logistics IoT Tracking System — carGO PH
+# Smart Logistics IoT Tracking System — carGO PH
 
-> MO-IT148 — Applications Development and Emerging Technologies
-> Section: H3101
-> Group: NodeBlk
+> MO-IT148 — Applications Development and Emerging Technologies <br>
+> Section: H3101 <br>
+> Group: NodeBlk <br>
 > Last Updated: May 9, 2026
 
 ---
 
 ## Project Overview
 
-A blockchain-powered logistics tracking system focused on package tracking, supply chain transparency, and fraud prevention. The system simulates IoT sensor data (GPS, RFID, Temperature) across 30 shipments, exported as CSV for downstream blockchain processing.
+A blockchain-powered logistics tracking system developed for the Applications Development and Emerging Technologies class (MO-IT148). This repository currently contains the IoT data simulation for Milestone 1, which generates raw sensor data for a smart tracking system focused on package tracking, supply chain transparency, and fraud prevention. It simulates GPS, RFID, and temperature sensor readings across 30 shipments, exported as CSV for downstream blockchain processing.
 
 ---
 
