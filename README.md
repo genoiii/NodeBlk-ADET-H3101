@@ -9,22 +9,79 @@
 
 ## Project Overview
 
+A blockchain-powered logistics tracking system focused on package tracking, supply chain transparency, and fraud prevention. The system simulates IoT sensor data (GPS, RFID, Temperature) across 30 shipments, exported as CSV for downstream blockchain processing.
 
+---
+
+## Features
+
+- IoT sensor data simulation
+  - GPS coordinate tracking with real Philippine city coordinates and route interpolation
+  - RFID checkpoint scanning with verified/flagged status
+  - Temperature monitoring for cold-chain and temp-regulated goods
+- Shipment registry with goods category, origin, destination, vehicle, and driver data
+- Separate CSV exports per sensor type plus a unified IoT data feed
+- CSV export for downstream blockchain processing
 
 ---
 
 ## Tech Stack
 
+- Python
+- pandas, numpy, random
+- Jupyter Notebook
 
 ---
 
-## Group Members & Roles
+## Project Structure
 
-| Name | Role |
-|------|------|
-|      |      |
-|      |      |
-|      |      |
+- `smart-logistics-iot-simulation.ipynb` — IoT data simulation notebook
+- `ph.csv` — Philippine city reference data (coordinates)
+- `shipment_registry.csv` — shipment metadata (origin, destination, goods category, vehicle, driver)
+- `gps_readings.csv` — GPS sensor readings per shipment
+- `rfid_readings.csv` — RFID checkpoint scan readings
+- `temperature_readings.csv` — temperature sensor readings (temp-regulated shipments only)
+- `iot_data.csv` — unified IoT feed combining all sensor types, sorted by timestamp
+
+---
+
+## How to Run the Project
+
+1. Clone the repository
+   ```
+   git clone <repository-url>
+   ```
+
+2. Go to the project folder
+   ```
+   cd smart-logistics-tracking
+   ```
+
+3. Create and activate a virtual environment
+
+   **Windows**
+   ```
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+   **Mac/Linux**
+   ```
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+4. Install dependencies
+   ```
+   pip install numpy pandas jupyter
+   ```
+
+5. Open the notebook
+   ```
+   jupyter notebook smart-logistics-iot-simulation.ipynb
+   ```
+
+6. Run the cells to generate the datasets
 
 ---
 
@@ -42,16 +99,11 @@
 
 ---
 
-## Repository Structure
+## Group Members
 
-
-
----
-
-## Setup & Usage
-
-
-
-
-
-
+- Abdelfattah, Rania Nabil
+- Cajucom, Martin Sheen 
+- De Lara, Chadley Marie
+- Manicad, Karissa Mae
+- Tantoco, Helena Rose 
+- Villaverde III, Eugenio 
