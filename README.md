@@ -101,9 +101,11 @@ A blockchain-powered logistics tracking system developed for the Applications De
 
 ## Group Members
 
-- Abdelfattah, Rania Nabil
-- Cajucom, Martin Sheen 
-- De Lara, Chadley Marie
-- Manicad, Karissa Mae
-- Tantoco, Helena Rose 
-- Villaverde III, Eugenio 
+| Name | Role |
+|------|------|
+| De Lara, Chadley Marie | Project Lead & Visualization Co-Lead |
+| Abdelfattah, Rania Nabil | Blockchain Dev Co-Lead & Documentation |
+| Cajucom, Martin Sheen | Blockchain Dev Lead & Documentation |
+| Manicad, Karissa Mae | Data Quality Checker & Visualization Lead |
+| Tantoco, Helena Rose | Integration Lead / Code QA & Tester |
+| Villaverde III, Eugenio | IoT Simulation Data Developer Lead & Tester |
