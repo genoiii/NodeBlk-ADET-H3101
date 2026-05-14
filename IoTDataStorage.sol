@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity 0.8.18;
 
 contract IoTDataStorage {
 
@@ -46,6 +46,14 @@ contract IoTDataStorage {
             address recordedBy;
         }
 
+        struct RFIDRecord {
+            uint256 timestamp;
+            string rfidTag;
+            string deviceId;
+            string status;
+            address recordedBy;
+        }
+
         uint256 public constant MAX_ENTRIES = 100;
         address public owner;
 
@@ -54,6 +62,7 @@ contract IoTDataStorage {
         IoTData [] public iotRecords;
         GPSRecord[] public gpsRecords;
         TempRecord[] public tempRecords;
+        RFIDRecord[] public rfidRecords;
 
         event ShipmentRegistered(string indexed rfidTag, string origin, string destination, uint8 category);
         event DataStored(uint256 timestamp, string indexed rfidTag, string deviceId, string dataType, string dataValue);
@@ -100,22 +109,22 @@ contract IoTDataStorage {
 
         // Generic store for dataType
         function storeData(
-    string memory readingId, string memory rfidTag,
-    string memory deviceId, string memory deviceType,
-    string memory dataType, string memory dataValue
-) external onlyOwner shipmentExists(rfidTag) withinLimit(iotRecords.length) {
-    iotRecords.push(IoTData({
-        timestamp: block.timestamp,
-        readingId: readingId,
-        rfidTag: rfidTag,
-        deviceId: deviceId,
-        deviceType: deviceType,
-        dataType: dataType,
-        dataValue: dataValue,
-        recordedBy: msg.sender
-    }));
-    emit DataStored(block.timestamp, rfidTag, deviceId, dataType, dataValue);
-}
+            string memory readingId, string memory rfidTag,
+            string memory deviceId, string memory deviceType,
+            string memory dataType, string memory dataValue
+        ) external onlyOwner shipmentExists(rfidTag) withinLimit(iotRecords.length) {
+            iotRecords.push(IoTData({
+                timestamp: block.timestamp,
+                readingId: readingId,
+                rfidTag: rfidTag,
+                deviceId: deviceId,
+                deviceType: deviceType,
+                dataType: dataType,
+                dataValue: dataValue,
+                recordedBy: msg.sender
+            }));
+            emit DataStored(block.timestamp, rfidTag, deviceId, dataType, dataValue);
+        }
    
         // Store temperature
         function storeTemperature(
@@ -128,10 +137,33 @@ contract IoTDataStorage {
             emit TemperatureStored(block.timestamp, rfidTag, deviceId, tempTimes10);
         }
 
+        //Store GPS
+        function storeGPS(
+            string memory rfidTag, string memory deviceId,
+            string memory latitude, string memory longitude
+        ) external onlyOwner shipmentExists(rfidTag) withinLimit(gpsRecords.length) {
+            gpsRecords.push(GPSRecord({
+                timestamp: block.timestamp,
+                rfidTag: rfidTag,
+                deviceId: deviceId,
+                latitude: latitude,
+                longitude: longitude,
+                recordedBy: msg.sender
+            }));
+            emit LocationStored(block.timestamp, rfidTag, deviceId, latitude, longitude);
+        }
+
         //Store RFID scan result
         function storeRFIDScan(
-            string memory rfidTag, string memory deviceId, string memory status
-        ) external onlyOwner shipmentExists(rfidTag) {
+        string memory rfidTag, string memory deviceId, string memory status
+        ) external onlyOwner shipmentExists(rfidTag) withinLimit(rfidRecords.length) {
+            rfidRecords.push(RFIDRecord({
+             timestamp: block.timestamp,
+                rfidTag: rfidTag,
+                deviceId: deviceId,
+                status: status,
+                recordedBy: msg.sender
+            }));
             emit RFIDScanned(block.timestamp, rfidTag, deviceId, status);
         }
 
@@ -145,6 +177,7 @@ contract IoTDataStorage {
         function iotRecordCount() external view returns (uint256) { return iotRecords.length; }
         function gpsRecordCount() external view returns (uint256) { return gpsRecords.length; }
         function tempRecordCount() external view returns (uint256) { return tempRecords.length; }
+        function rfidRecordCount() external view returns (uint256) { return rfidRecords.length; }
 
     function getLocationsByRFID(string memory rfidTag) external view returns (GPSRecord[] memory) {
         uint256 count = 0;
@@ -167,6 +200,17 @@ contract IoTDataStorage {
             if (_strEq(tempRecords[i].rfidTag, rfidTag)) result[idx++] = tempRecords[i];
         return result; 
     }
+
+    function getRFIDScansByRFID(string memory rfidTag) external view returns (RFIDRecord[] memory) {
+        uint256 count = 0;
+        for (uint256 i = 0; i < rfidRecords.length; i++)
+          if (_strEq(rfidRecords[i].rfidTag, rfidTag)) count++;
+        RFIDRecord[] memory result = new RFIDRecord[](count);
+         uint256 idx = 0;
+         for (uint256 i = 0; i < rfidRecords.length; i++)
+            if (_strEq(rfidRecords[i].rfidTag, rfidTag)) result[idx++] = rfidRecords[i];
+        return result;
+    }   
 
     function transferOwnership(address newOwner) external onlyOwner {
         require(newOwner != address(0), "Zero address");
