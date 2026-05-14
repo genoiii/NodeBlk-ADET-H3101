@@ -1,0 +1,763 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "dataType",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "dataValue",
+						"type": "string"
+					}
+				],
+				"name": "DataStored",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "latitude",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "longitude",
+						"type": "string"
+					}
+				],
+				"name": "LocationStored",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"name": "RFIDScanned",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "destination",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "category",
+						"type": "uint8"
+					}
+				],
+				"name": "ShipmentRegistered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "int16",
+						"name": "tempTimes10",
+						"type": "int16"
+					}
+				],
+				"name": "TemperatureStored",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "MAX_ENTRIES",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllRFIDTags",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					}
+				],
+				"name": "getLocationsByRFID",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "rfidTag",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "deviceId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "latitude",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "longitude",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "recordedBy",
+								"type": "address"
+							}
+						],
+						"internalType": "struct IoTDataStorage.GPSRecord[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					}
+				],
+				"name": "getShipment",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "rfidTag",
+								"type": "string"
+							},
+							{
+								"internalType": "enum IoTDataStorage.GoodsCategory",
+								"name": "category",
+								"type": "uint8"
+							},
+							{
+								"internalType": "string",
+								"name": "origin",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "destination",
+								"type": "string"
+							},
+							{
+								"internalType": "uint16",
+								"name": "packageCount",
+								"type": "uint16"
+							},
+							{
+								"internalType": "string",
+								"name": "vehicleId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "driverId",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "registeredAt",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "exists",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct IoTDataStorage.Shipment",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					}
+				],
+				"name": "getTemperaturesByRFID",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "rfidTag",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "deviceId",
+								"type": "string"
+							},
+							{
+								"internalType": "int16",
+								"name": "tempTimes10",
+								"type": "int16"
+							},
+							{
+								"internalType": "address",
+								"name": "recordedBy",
+								"type": "address"
+							}
+						],
+						"internalType": "struct IoTDataStorage.TempRecord[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gpsRecordCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "gpsRecords",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "latitude",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "longitude",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "recordedBy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "iotRecordCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "iotRecords",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "readingId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "deviceType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dataType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dataValue",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "recordedBy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"internalType": "enum IoTDataStorage.GoodsCategory",
+						"name": "category",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "origin",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "destination",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "packageCount",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string",
+						"name": "vehicleId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "driverId",
+						"type": "string"
+					}
+				],
+				"name": "registerShipment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "rfidTags",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "shipmentCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "readingId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "deviceType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dataType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dataValue",
+						"type": "string"
+					}
+				],
+				"name": "storeData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"name": "storeRFIDScan",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"internalType": "int16",
+						"name": "tempTimes10",
+						"type": "int16"
+					}
+				],
+				"name": "storeTemperature",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tempRecordCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "tempRecords",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "rfidTag",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "deviceId",
+						"type": "string"
+					},
+					{
+						"internalType": "int16",
+						"name": "tempTimes10",
+						"type": "int16"
+					},
+					{
+						"internalType": "address",
+						"name": "recordedBy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"IoTDataStorage.sol": "IoTDataStorage"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"IoTDataStorage.sol": {
+			"keccak256": "0xc3cfb671695945e3879177ca909641d487a08d94b722d53f744a9fbf4234c192",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://240d0de31e92ff9eeb1bee0d66cb8889ee5e347d500bf07471325c059808f108",
+				"dweb:/ipfs/QmVMRC3nYKZCHhBjq76sVZeW6iHVDm2nhjYqheKDiA31JB"
+			]
+		}
+	},
+	"version": 1
+}
