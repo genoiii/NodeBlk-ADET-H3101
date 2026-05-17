@@ -3,13 +3,13 @@
 > MO-IT148 — Applications Development and Emerging Technologies <br>
 > Section: H3101 <br>
 > Group: NodeBlk <br>
-> Last Updated: May 9, 2026
+> Last Updated: May 16, 2026
 
 ---
 
 ## Project Overview
 
-A blockchain-powered logistics tracking system developed for the Applications Development and Emerging Technologies class (MO-IT148). This repository currently contains the IoT data simulation for Milestone 1, which generates raw sensor data for a smart tracking system focused on package tracking, supply chain transparency, and fraud prevention. It simulates GPS, RFID, and temperature sensor readings across 30 shipments, exported as CSV for downstream blockchain processing.
+A blockchain-powered logistics tracking system developed for the Applications Development and Emerging Technologies class (MO-IT148). This repository currently contains the IoT data simulation and the smart contract data storage layer for Milestone 1, focused on package tracking, supply chain transparency, and fraud prevention. It simulates GPS, RFID, and temperature sensor readings across 30 shipments and stores them on a local blockchain through a Solidity smart contract deployed on Ganache.
 
 ---
 
@@ -21,7 +21,11 @@ A blockchain-powered logistics tracking system developed for the Applications De
   - Temperature monitoring for cold-chain and temp-regulated goods
 - Shipment registry with goods category, origin, destination, vehicle, and driver data
 - Separate CSV exports per sensor type plus a unified IoT data feed
-- CSV export for downstream blockchain processing
+- Smart contract data storage on a local Ethereum blockchain
+  - Shipment registration with goods category enum
+  - On-chain storage of GPS, RFID, and temperature readings
+  - Per-shipment query functions for retrieving sensor history
+  - Owner-restricted writes and ownership transfer
 
 ---
 
@@ -30,6 +34,8 @@ A blockchain-powered logistics tracking system developed for the Applications De
 - Python
 - pandas, numpy, random
 - Jupyter Notebook
+- Remix IDE (Solidity 0.8.18)
+- Ganache (local Ethereum blockchain)
 
 ---
 
@@ -42,6 +48,7 @@ A blockchain-powered logistics tracking system developed for the Applications De
 - `rfid_readings.csv` — RFID checkpoint scan readings
 - `temperature_readings.csv` — temperature sensor readings (temp-regulated shipments only)
 - `iot_data.csv` — unified IoT feed combining all sensor types, sorted by timestamp
+- `IoTDataStorage.sol` — Solidity smart contract for on-chain data storage
 
 ---
 
@@ -83,6 +90,14 @@ A blockchain-powered logistics tracking system developed for the Applications De
 
 6. Run the cells to generate the datasets
 
+### Smart Contract Deployment
+
+1. Open [Remix IDE](https://remix.ethereum.org) and upload `IoTDataStorage.sol`
+2. In the Solidity Compiler tab, select compiler version **0.8.18** and compile the contract
+3. Open Ganache and click **Quickstart Ethereum** to start a local blockchain
+4. In Remix, go to the **Deploy & Run Transactions** tab and select **External HTTP Provider** as the environment, pointing to the Ganache RPC endpoint (default: `http://127.0.0.1:7545`)
+5. Deploy the contract and save the contract address and ABI for later use
+
 ---
 
 ## Weekly Progress
@@ -91,7 +106,7 @@ A blockchain-powered logistics tracking system developed for the Applications De
 |------|-----------|--------|
 | Week 1 | Project Setup & Planning | ✅ |
 | Week 2 | IoT Data Simulation | ✅ |
-| Week 3 | Smart Contract Data Storage/Development | |
+| Week 3 | Smart Contract Data Storage/Development | ✅ |
 | Week 4 | Blockchain Ledger Draft | |
 | Week 5 | Blockchain Ledger Submission | |
 | Week 6 | Data Retrieval & Processing | |
