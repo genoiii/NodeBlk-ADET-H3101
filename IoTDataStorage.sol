@@ -85,6 +85,10 @@ contract IoTDataStorage {
         _;
     }
 
+    constructor() {
+        owner = msg.sender;
+    }
+
         //Register a shipment before storing any sensor data
 
         function registerShipment(
