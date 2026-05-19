@@ -4,6 +4,9 @@ venv/
 # Claude workflow infrastructure
 .claude/
 
+# Local reference copy — shared on GDrive
+ADET group docs/
+
 # Jupyter auto-saves
 .ipynb_checkpoints/
 
