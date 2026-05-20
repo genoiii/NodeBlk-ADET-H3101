@@ -54,7 +54,7 @@ contract IoTDataStorage {
             address recordedBy;
         }
 
-        uint256 public constant MAX_ENTRIES = 100;
+        uint256 public constant MAX_ENTRIES = 500;
         address public owner;
 
         mapping(string => Shipment) private shipments;
