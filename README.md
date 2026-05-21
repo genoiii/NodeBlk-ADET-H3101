@@ -3,7 +3,7 @@
 > MO-IT148 — Applications Development and Emerging Technologies <br>
 > Section: H3101 <br>
 > Group: NodeBlk <br>
-> Last Updated: May 16, 2026
+> Last Updated: May 21, 2026
 
 ---
 
@@ -92,11 +92,21 @@ A blockchain-powered logistics tracking system developed for the Applications De
 
 ### Smart Contract Deployment
 
+#### Ganache Setup
+
+1. Open Ganache and click **Quickstart Ethereum** to start a local blockchain
+2. Go to **Settings** (gear icon) → **Chain** tab and increase the **Gas Limit** to at least **5,000,000** — the default may be too low for this contract and can cause out-of-gas errors at deployment
+
+#### Remix Setup
+
 1. Open [Remix IDE](https://remix.ethereum.org) and upload `IoTDataStorage.sol`
-2. In the Solidity Compiler tab, select compiler version **0.8.18** and compile the contract
-3. Open Ganache and click **Quickstart Ethereum** to start a local blockchain
-4. In Remix, go to the **Deploy & Run Transactions** tab and select **External HTTP Provider** as the environment, pointing to the Ganache RPC endpoint (default: `http://127.0.0.1:7545`)
-5. Deploy the contract and save the contract address and ABI for later use
+   - The contract uses `pragma solidity ^0.8.18` — the caret (`^`) allows the compiler to match compatible versions for better Ganache compatibility
+2. In the **Solidity Compiler** tab
+   > 💡 **EVM Version:** If you encounter deployment errors, go to **Advanced Configurations** and switch the EVM Version from `default (osaka)` to **paris**
+3. Go to the **Deploy & Run Transactions** tab and select **Custom - External HTTP Provider** as the environment, pointing to the Ganache RPC endpoint (default: `http://127.0.0.1:8545`)
+4. Deploy the contract
+   > ⚠️ **Gas Limit:** If Remix shows a gas estimation error, set the Gas Limit manually to at least **5,000,000** (tested up to 120,000,000) and click **Deploy** to proceed
+5. Save the deployed **contract address** and **ABI** for use in the Web3.py connector script
 
 ---
 
@@ -107,7 +117,7 @@ A blockchain-powered logistics tracking system developed for the Applications De
 | Week 1 | Project Setup & Planning | ✅ |
 | Week 2 | IoT Data Simulation | ✅ |
 | Week 3 | Smart Contract Data Storage/Development | ✅ |
-| Week 4 | Blockchain Ledger Draft | |
+| Week 4 | Blockchain Ledger Draft | ✅ |
 | Week 5 | Blockchain Ledger Submission | |
 | Week 6 | Data Retrieval & Processing | |
 | Week 7 | Line Plot of IoT Sensor Readings | |

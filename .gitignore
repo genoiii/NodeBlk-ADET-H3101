@@ -10,3 +10,6 @@ venv/
 # Python compiled files
 __pycache__/
 *.pyc
+
+# ADET group docs
+ADET group docs/
