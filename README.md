@@ -3,7 +3,7 @@
 > MO-IT148 — Applications Development and Emerging Technologies <br>
 > Section: H3101 <br>
 > Group: NodeBlk <br>
-> Last Updated: May 16, 2026
+> Last Updated: May 22, 2026
 
 ---
 
@@ -26,13 +26,18 @@ A blockchain-powered logistics tracking system developed for the Applications De
   - On-chain storage of GPS, RFID, and temperature readings
   - Per-shipment query functions for retrieving sensor history
   - Owner-restricted writes and ownership transfer
+- Blockchain ledger integration
+  - Web3.py connection to Ganache local blockchain
+  - Draft script for connection testing and dummy transaction verification
+  - Full submission script that registers all 30 shipments and uploads 329 IoT records on-chain
+  - On-chain verification of GPS, temperature, and RFID record counts
 
 ---
 
 ## Tech Stack
 
 - Python
-- pandas, numpy, random
+- pandas, numpy, random, web3.py
 - Jupyter Notebook
 - Remix IDE (Solidity 0.8.18)
 - Ganache (local Ethereum blockchain)
@@ -42,6 +47,8 @@ A blockchain-powered logistics tracking system developed for the Applications De
 ## Project Structure
 
 - `smart-logistics-iot-simulation.ipynb` — IoT data simulation notebook
+- `blockchain-ledger-verification.ipynb` — Week 4 draft: connection test and dummy transaction
+- `milestone-1-submission.ipynb` — Week 5 submission: full shipment registration and IoT data upload to blockchain
 - `ph.csv` — Philippine city reference data (coordinates)
 - `shipment_registry.csv` — shipment metadata (origin, destination, goods category, vehicle, driver)
 - `gps_readings.csv` — GPS sensor readings per shipment
@@ -49,6 +56,8 @@ A blockchain-powered logistics tracking system developed for the Applications De
 - `temperature_readings.csv` — temperature sensor readings (temp-regulated shipments only)
 - `iot_data.csv` — unified IoT feed combining all sensor types, sorted by timestamp
 - `IoTDataStorage.sol` — Solidity smart contract for on-chain data storage
+- `scenario1.json` — Remix deployment record containing contract address and ABI
+- `remix.config.json` — Remix IDE configuration
 
 ---
 
@@ -92,12 +101,27 @@ A blockchain-powered logistics tracking system developed for the Applications De
 
 ### Smart Contract Deployment
 
+#### Ganache Setup
+
+1. Open Ganache and click **Quickstart Ethereum** to start a local blockchain
+2. Go to **Settings** (gear icon) → **Chain** tab and increase the **Gas Limit** to at least **5,000,000** — the default may be too low for this contract and can cause out-of-gas errors at deployment
+
+
+### Smart Contract Deployment/Remix Setup
+ 
 1. Open [Remix IDE](https://remix.ethereum.org) and upload `IoTDataStorage.sol`
 2. In the Solidity Compiler tab, select compiler version **0.8.18** and compile the contract
 3. Open Ganache and click **Quickstart Ethereum** to start a local blockchain
 4. In Remix, go to the **Deploy & Run Transactions** tab and select **External HTTP Provider** as the environment, pointing to the Ganache RPC endpoint (default: `http://127.0.0.1:7545`)
 5. Deploy the contract and save the contract address and ABI for later use
 
+
+### Blockchain Ledger (Weeks 4 & 5)
+ 
+1. Ensure Ganache is running and the contract is deployed
+2. Open `blockchain-ledger-verification.ipynb` to verify the Web3 connection and test a dummy transaction
+3. Open `milestone-1-submission.ipynb` to register all 30 shipments and upload all IoT sensor data to the blockchain
+4. The final cell prints a verification summary of all records stored on-chain
 ---
 
 ## Weekly Progress
@@ -107,8 +131,8 @@ A blockchain-powered logistics tracking system developed for the Applications De
 | Week 1 | Project Setup & Planning | ✅ |
 | Week 2 | IoT Data Simulation | ✅ |
 | Week 3 | Smart Contract Data Storage/Development | ✅ |
-| Week 4 | Blockchain Ledger Draft | |
-| Week 5 | Blockchain Ledger Submission | |
+| Week 4 | Blockchain Ledger Draft | ✅ |
+| Week 5 | Blockchain Ledger Submission | ✅ |
 | Week 6 | Data Retrieval & Processing | |
 | Week 7 | Line Plot of IoT Sensor Readings | |
 

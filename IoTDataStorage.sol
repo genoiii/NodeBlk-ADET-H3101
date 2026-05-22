@@ -54,7 +54,7 @@ contract IoTDataStorage {
             address recordedBy;
         }
 
-        uint256 public constant MAX_ENTRIES = 100;
+        uint256 public constant MAX_ENTRIES = 500;
         address public owner;
 
         mapping(string => Shipment) private shipments;
@@ -83,6 +83,10 @@ contract IoTDataStorage {
         modifier withinLimit(uint256 currentLength) {
         require(currentLength < MAX_ENTRIES, "Storage limit reached");
         _;
+    }
+
+    constructor() {
+        owner = msg.sender;
     }
 
         //Register a shipment before storing any sensor data

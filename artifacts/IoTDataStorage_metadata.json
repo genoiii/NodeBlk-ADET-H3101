@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -877,11 +882,11 @@
 	},
 	"sources": {
 		"IoTDataStorage.sol": {
-			"keccak256": "0x99cf13e8dfe9b3d5be55352c791cd4f324c00c9a16eb25e3ea137ae7c476f034",
+			"keccak256": "0x3ad8281223b09eafd1e485f94ee95b741e2d818c8aa912006ae22e8bb7370701",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bde68ef69f0a4bb8c8bad9d4e1768cd9fe7aeccd29897de2408fadc9be3631e8",
-				"dweb:/ipfs/QmYGRVL8MtgmMu9f1P129RZX5FemnosbaBPCs2DGJZjaNe"
+				"bzz-raw://ea24c416f49cb7ffc840946d6c84eef8f39b6565a70036dce69fabf87f927810",
+				"dweb:/ipfs/QmaevLmPTk2i2LZHAYCgbfhp75X7NmBJFBoRacoakivpWC"
 			]
 		}
 	},
