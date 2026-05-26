@@ -3,7 +3,7 @@
 > MO-IT148 — Applications Development and Emerging Technologies <br>
 > Section: H3101 <br>
 > Group: NodeBlk <br>
-> Last Updated: May 22, 2026
+> Last Updated: May 27, 2026
 
 ---
 
@@ -90,7 +90,7 @@ Generates the synthetic IoT dataset used by the blockchain integration pipeline.
 End-to-end blockchain integration in six labeled sections.
 
 **Section 1 — Ganache Connection**
-Connects Web3.py to a local Ganache instance on RPC port `8545`. Raises `ConnectionError` if Ganache is unreachable. Prints the latest block number on success.
+Connects Web3.py to a local Ganache instance on RPC port `7545`. Raises `ConnectionError` if Ganache is unreachable. Prints the latest block number on success.
 
 **Section 2 — Contract Load**
 Loads the compiled contract ABI from `contracts/IoTDataStorage_compData.json` via `json.load()` and instantiates the contract using a `contract_config` dict pairing address + ABI. Sets `web3.eth.default_account = web3.eth.accounts[0]` so writes go through the deployer (required by the `onlyOwner` modifier). Prints the pre-write `iotRecordCount()` as a baseline.
@@ -160,12 +160,12 @@ Reads and prints all five on-chain counters — `shipmentCount()`, `iotRecordCou
 #### Remix Setup
 1. Open [Remix IDE](https://remix.ethereum.org) and upload `contracts/IoTDataStorage.sol`
 2. In the Solidity Compiler tab, select compiler version **0.8.18** and compile the contract
-3. In Remix, go to the **Deploy & Run Transactions** tab and select **External HTTP Provider** as the environment, pointing to the Ganache RPC endpoint (`http://127.0.0.1:8545`)
+3. In Remix, go to the **Deploy & Run Transactions** tab and select **External HTTP Provider** as the environment, pointing to the Ganache RPC endpoint (`http://127.0.0.1:7545`)
 4. Deploy the contract and copy the deployed contract address
 
 ### Blockchain Integration
 
-1. Ensure Ganache is running on port **8545** and the contract is deployed
+1. Ensure Ganache is running on port **7545** and the contract is deployed
 2. Open the integration notebook
    ```
    jupyter notebook notebooks/smart-logistics-blockchain-integration.ipynb
