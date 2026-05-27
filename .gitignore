@@ -5,7 +5,7 @@ venv/
 .claude/
 
 # Local reference copy — shared on GDrive
-ADET group docs/
+docs/
 
 # Jupyter auto-saves
 .ipynb_checkpoints/

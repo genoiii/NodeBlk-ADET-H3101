@@ -882,11 +882,11 @@
 	},
 	"sources": {
 		"IoTDataStorage.sol": {
-			"keccak256": "0x3ad8281223b09eafd1e485f94ee95b741e2d818c8aa912006ae22e8bb7370701",
+			"keccak256": "0xad0fc6530d16664a883a21ec4ef139fb76f80cd123f1bca3f94ded81db85cb07",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ea24c416f49cb7ffc840946d6c84eef8f39b6565a70036dce69fabf87f927810",
-				"dweb:/ipfs/QmaevLmPTk2i2LZHAYCgbfhp75X7NmBJFBoRacoakivpWC"
+				"bzz-raw://7a4efad9f15b248993bf24993effcf73560bdfb9e726fb20121cfc72d1d44571",
+				"dweb:/ipfs/QmRoikkQGq1s4TyoYuZmoSxuBRyGfskFYr1m32fEZepxTb"
 			]
 		}
 	},
