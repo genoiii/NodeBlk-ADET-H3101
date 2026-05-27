@@ -107,11 +107,14 @@ Defines four typed helper functions used by Section 4:
 
 Each helper prints a confirmation line in the format: `data_type | rfid_tag | data_value | Txn: [hash]`.
 
+**Section 3c — CSV Data Preview**
+Loads `iot_data.csv` into a pandas DataFrame and prints the total record count alongside the first three rows. Serves as a quick sanity check confirming the dataset is accessible and correctly structured before the bulk write in Section 4.
+
 **Section 4 — CSV Load + Bulk Write (`run_bulk_write()`)**
 Two-step pipeline. First registers all 30 shipments from `shipment_registry.csv` using a `CATEGORY_MAP` dict to convert the `goods_category` string into the Solidity `GoodsCategory` enum index. Then iterates `iot_data.csv` and routes each row by `data_type` to the correct helper from Section 3b. Each row is wrapped in try/except so a single failure does not abort the loop. `time.sleep(0.5)` between successful writes prevents nonce conflicts.
 
 **Section 5 — Verification (`run_verification()`)**
-Reads and prints all five on-chain counters — `shipmentCount()`, `iotRecordCount()`, `gpsRecordCount()`, `tempRecordCount()`, `rfidRecordCount()` — then calls `getShipment()` on the first registered RFID tag and prints the returned struct fields. Confirms data was correctly routed into separate on-chain arrays per data type.
+Reads and prints all five on-chain counters — `shipmentCount()`, `iotRecordCount()`, `gpsRecordCount()`, `tempRecordCount()`, `rfidRecordCount()` — then retrieves and prints the first real shipment from `shipment_registry.csv` by calling `getAllRFIDTags()[1]` (index `[1]` skips the `TEST-001` dummy registered in Section 3) and `getShipment()` on that tag. Also retrieves the first real GPS record from `iot_data.csv` via `gpsRecords(0)` and prints its timestamp, RFID tag, device ID, latitude, and longitude. Confirms data was correctly routed into separate on-chain arrays per data type.
 
 ---
 
