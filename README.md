@@ -1,6 +1,6 @@
 # Smart Logistics IoT Tracking System — carGO PH
 
-> MO-IT148 — Applications Development and Emerging Technologies <br>
+> MO-IT148 — Applications Development and Emerging Technologies (ADET) <br>
 > Section: H3101 <br>
 > Group: NodeBlk <br>
 > Last Updated: June 5, 2026
@@ -9,7 +9,7 @@
 
 ## Project Overview
 
-A blockchain-powered logistics tracking system developed for the Applications Development and Emerging Technologies class (MO-IT148). This repository contains the Milestone 1 submission — integrating IoT data simulation with on-chain storage via Web3.py. It simulates GPS, RFID, and temperature sensor readings across 30 shipments and stores them on a local blockchain through a Solidity smart contract deployed on Ganache.
+A blockchain-powered logistics tracking system developed for the Applications Development and Emerging Technologies class (MO-IT148). This repository contains the group's ADET submission — integrating IoT data simulation with on-chain storage via Web3.py, and full blockchain data retrieval and cleaning. It simulates GPS, RFID, and temperature sensor readings across 30 shipments, stores them on a local blockchain through a Solidity smart contract deployed on Ganache, retrieves and cleans the on-chain data into a structured, tidy dataset, and computes per-sensor statistics for downstream visualization.
 
 
 ---
