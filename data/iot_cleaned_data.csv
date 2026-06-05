@@ -1,0 +1,330 @@
+blockchain_timestamp,sensor_timestamp,rfid_tag,device_id,sensor_type,latitude,longitude,scan_status,temperature_c,is_flagged,temp_breach,goods_category,origin,destination
+2026-06-04 16:21:45,2026-05-03 07:00:00,RFID-020,GPS291,GPS,14.601956,120.989036,,,False,,Industrial,Paco,Pandacan
+2026-06-04 16:21:46,2026-05-03 07:00:00,RFID-011,GPS728,GPS,14.620032,120.962165,,,False,,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:48,2026-05-03 09:00:00,RFID-020,GPS920,GPS,14.595757,120.981906,,,False,,Industrial,Paco,Pandacan
+2026-06-04 16:21:48,2026-05-03 09:00:00,RFID-028,GPS356,GPS,14.374937,121.038127,,,False,,Industrial,Bayanan,Marikina Heights
+2026-06-04 16:21:51,2026-05-03 09:00:00,RFID-011,GPS262,GPS,14.622406,120.970944,,,False,,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:53,2026-05-03 11:00:00,RFID-020,GPS343,GPS,14.544307,120.958798,,,False,,Industrial,Paco,Pandacan
+2026-06-04 16:21:54,2026-05-03 11:00:00,RFID-028,GPS501,GPS,14.474628,121.042294,,,False,,Industrial,Bayanan,Marikina Heights
+2026-06-04 16:21:54,2026-05-03 11:00:00,RFID-011,GPS125,GPS,14.552821,120.960382,,,False,,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:56,2026-05-03 13:00:00,RFID-020,GPS858,GPS,14.550873,120.954035,,,False,,Industrial,Paco,Pandacan
+2026-06-04 16:21:58,2026-05-03 13:00:00,RFID-028,GPS805,GPS,14.521048,121.099622,,,False,,Industrial,Bayanan,Marikina Heights
+2026-06-04 16:21:59,2026-05-03 13:00:00,RFID-011,GPS799,GPS,14.586248,121.02977,,,False,,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:22:00,2026-05-03 14:00:00,RFID-007,GPS567,GPS,14.529191,121.019165,,,False,,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:01,2026-05-03 15:00:00,RFID-020,GPS852,GPS,14.547396,120.958379,,,False,,Industrial,Paco,Pandacan
+2026-06-04 16:22:01,2026-05-03 15:00:00,RFID-011,GPS796,GPS,14.56466,121.02077,,,False,,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:22:02,2026-05-03 15:00:00,RFID-028,GPS653,GPS,14.564057,121.056001,,,False,,Industrial,Bayanan,Marikina Heights
+2026-06-04 16:22:05,2026-05-03 16:00:00,RFID-007,GPS312,GPS,14.509873,121.042269,,,False,,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:07,2026-05-03 17:00:00,RFID-018,GPS382,GPS,14.636106,120.962051,,,False,,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:10,2026-05-03 17:00:00,RFID-028,GPS819,GPS,14.64609,121.082004,,,False,,Industrial,Bayanan,Marikina Heights
+2026-06-04 16:22:11,2026-05-03 17:00:00,RFID-001,GPS985,GPS,14.264923,120.967416,,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:13,2026-05-03 18:00:00,RFID-007,GPS454,GPS,14.473569,121.015841,,,False,,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:15,2026-05-03 19:00:00,RFID-018,GPS875,GPS,14.556974,121.015227,,,False,,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:16,2026-05-03 19:00:00,RFID-001,GPS963,GPS,14.40099,120.962512,,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:18,2026-05-03 20:00:00,RFID-007,GPS394,GPS,14.50597,120.969877,,,False,,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:19,2026-05-03 21:00:00,RFID-001,GPS174,GPS,14.472531,120.968201,,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:20,2026-05-03 21:00:00,RFID-018,GPS980,GPS,14.552817,120.974593,,,False,,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:24,2026-05-03 22:00:00,RFID-017,GPS711,GPS,14.552779,121.028871,,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:25,2026-05-03 22:00:00,RFID-007,GPS613,GPS,14.495581,120.977954,,,False,,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:26,2026-05-03 23:00:00,RFID-001,GPS477,GPS,14.521417,120.977563,,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:29,2026-05-03 23:00:00,RFID-018,GPS931,GPS,14.532555,121.025508,,,False,,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:30,2026-05-04 00:00:00,RFID-017,GPS571,GPS,14.568564,121.066331,,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:31,2026-05-04 00:00:00,RFID-015,GPS832,GPS,14.578106,120.996845,,,False,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:22:33,2026-05-04 01:00:00,RFID-001,GPS168,GPS,14.583952,120.974364,,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:36,2026-05-04 01:00:00,RFID-009,GPS943,GPS,14.576962,120.973019,,,False,,Industrial,Manila,Western Bicutan
+2026-06-04 16:22:37,2026-05-04 01:00:00,RFID-018,GPS673,GPS,14.526185,121.065901,,,False,,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:39,2026-05-04 02:00:00,RFID-015,GPS591,GPS,14.539197,120.964332,,,False,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:22:40,2026-05-04 02:00:00,RFID-017,GPS372,GPS,14.536609,121.068116,,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:41,2026-05-04 02:00:00,RFID-024,GPS510,GPS,14.473785,121.039301,,,False,,Industrial,Upper Bicutan,Santamesa
+2026-06-04 16:22:42,2026-05-04 03:00:00,RFID-029,GPS686,GPS,14.526029,120.989625,,,False,,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:22:44,2026-05-04 03:00:00,RFID-009,GPS309,GPS,14.575115,120.946273,,,False,,Industrial,Manila,Western Bicutan
+2026-06-04 16:22:46,2026-05-04 04:00:00,RFID-013,GPS149,GPS,14.53015,121.064244,,,False,,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:22:47,2026-05-04 04:00:00,RFID-017,GPS167,GPS,14.487676,121.096142,,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:48,2026-05-04 04:00:00,RFID-015,GPS624,GPS,14.485523,121.019585,,,False,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:22:49,2026-05-04 04:00:00,RFID-024,GPS734,GPS,14.551002,121.030139,,,False,,Industrial,Upper Bicutan,Santamesa
+2026-06-04 16:22:50,2026-05-04 05:00:00,RFID-009,GPS757,GPS,14.589889,121.029639,,,False,,Industrial,Manila,Western Bicutan
+2026-06-04 16:22:50,2026-05-04 05:00:00,RFID-029,GPS847,GPS,14.51133,120.97706,,,False,,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:22:56,2026-05-04 06:00:00,RFID-026,GPS585,GPS,14.52798,121.033333,,,False,,Frozen,Santo Niño,Payatas
+2026-06-04 16:22:57,2026-05-04 06:00:00,RFID-024,GPS573,GPS,14.516303,120.994114,,,False,,Industrial,Upper Bicutan,Santamesa
+2026-06-04 16:23:00,2026-05-04 06:00:00,RFID-017,GPS557,GPS,14.521444,121.037259,,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:23:01,2026-05-04 06:00:00,RFID-015,GPS561,GPS,14.438709,120.987879,,,False,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:23:01,2026-05-04 06:00:00,RFID-002,GPS600,GPS,14.464345,121.036432,,,False,,Dry Goods,San Isidro,Santamesa
+2026-06-04 16:23:02,2026-05-04 06:00:00,RFID-013,GPS566,GPS,14.442522,121.003056,,,False,,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:04,2026-05-04 07:00:00,RFID-029,GPS753,GPS,14.562831,121.023869,,,False,,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:23:06,2026-05-04 07:00:00,RFID-009,GPS410,GPS,14.509572,121.058644,,,False,,Industrial,Manila,Western Bicutan
+2026-06-04 16:23:07,2026-05-04 02:00:00,RFID-015,GPS591,GPS,14.391337,121.058987,,,False,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:23:09,2026-05-04 08:00:00,RFID-024,GPS184,GPS,14.539368,120.993507,,,False,,Industrial,Upper Bicutan,Santamesa
+2026-06-04 16:23:10,2026-05-04 08:00:00,RFID-026,GPS138,GPS,14.570612,121.020427,,,False,,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:11,2026-05-04 08:00:00,RFID-013,GPS135,GPS,14.472677,121.011359,,,False,,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:12,2026-05-04 08:00:00,RFID-002,GPS767,GPS,14.505112,121.038929,,,False,,Dry Goods,San Isidro,Santamesa
+2026-06-04 16:23:13,2026-05-04 09:00:00,RFID-006,GPS647,GPS,14.461823,121.074421,,,False,,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:14,2026-05-04 09:00:00,RFID-029,GPS281,GPS,14.5817,120.992071,,,False,,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:23:16,2026-05-04 09:00:00,RFID-009,GPS973,GPS,14.49221,121.004947,,,False,,Industrial,Manila,Western Bicutan
+2026-06-04 16:23:17,2026-05-04 09:00:00,RFID-030,GPS198,GPS,14.680672,120.995365,,,False,,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:23:21,2026-05-04 10:00:00,RFID-013,GPS445,GPS,14.464526,121.017546,,,False,,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:22,2026-05-04 10:00:00,RFID-026,GPS927,GPS,14.568176,121.016085,,,False,,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:23,2026-05-04 10:00:00,RFID-024,GPS550,GPS,14.632337,121.051029,,,False,,Industrial,Upper Bicutan,Santamesa
+2026-06-04 16:23:24,2026-05-04 10:00:00,RFID-002,GPS382,GPS,14.581162,120.990176,,,False,,Dry Goods,San Isidro,Santamesa
+2026-06-04 16:23:27,2026-05-04 11:00:00,RFID-029,GPS107,GPS,14.576986,121.021143,,,False,,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:23:28,2026-05-04 11:00:00,RFID-030,GPS328,GPS,14.626945,121.02623,,,False,,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:23:29,2026-05-04 11:00:00,RFID-021,GPS477,GPS,14.349834,121.01999,,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:23:30,2026-05-04 11:00:00,RFID-006,GPS529,GPS,14.393963,121.086267,,,False,,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:31,2026-05-04 11:00:00,RFID-019,GPS988,GPS,14.441767,120.950812,,,False,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:23:34,2026-05-04 12:00:00,RFID-026,GPS957,GPS,14.688782,121.108503,,,False,,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:36,2026-05-04 12:00:00,RFID-013,GPS565,GPS,14.473422,121.046483,,,False,,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:37,2026-05-04 12:00:00,RFID-002,GPS967,GPS,14.586445,121.003019,,,False,,Dry Goods,San Isidro,Santamesa
+2026-06-04 16:23:39,2026-05-04 12:00:00,RFID-005,GPS563,GPS,14.42939,121.064837,,,False,,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:23:42,2026-05-04 13:00:00,RFID-021,GPS667,GPS,14.287202,120.966907,,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:23:44,2026-05-04 13:00:00,RFID-019,GPS508,GPS,14.503783,121.048902,,,False,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:23:45,2026-05-04 13:00:00,RFID-003,GPS719,GPS,14.510645,121.074847,,,False,,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:23:45,2026-05-04 13:00:00,RFID-006,GPS108,GPS,14.428732,120.998522,,,False,,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:46,2026-05-04 13:00:00,RFID-030,GPS299,GPS,14.690157,121.017505,,,False,,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:23:51,2026-05-04 14:00:00,RFID-005,GPS611,GPS,14.47221,121.067479,,,False,,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:23:52,2026-05-04 14:00:00,RFID-002,GPS733,GPS,14.645407,121.024163,,,False,,Dry Goods,San Isidro,Santamesa
+2026-06-04 16:23:53,2026-05-04 14:00:00,RFID-026,GPS535,GPS,14.731907,121.145818,,,False,,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:54,2026-05-04 15:00:00,RFID-006,GPS354,GPS,14.298147,120.994875,,,False,,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:55,2026-05-04 15:00:00,RFID-030,GPS740,GPS,14.685763,121.052897,,,False,,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:23:55,2026-05-04 15:00:00,RFID-019,GPS438,GPS,14.579812,121.044704,,,False,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:23:58,2026-05-04 15:00:00,RFID-021,GPS185,GPS,14.322023,121.039818,,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:24:00,2026-05-04 15:00:00,RFID-003,GPS346,GPS,14.603414,121.08785,,,False,,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:04,2026-05-04 16:00:00,RFID-023,GPS341,GPS,14.609947,121.024951,,,False,,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:05,2026-05-04 16:00:00,RFID-005,GPS603,GPS,14.445633,121.093842,,,False,,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:24:12,2026-05-04 17:00:00,RFID-021,GPS504,GPS,14.344162,120.986442,,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:24:13,2026-05-04 17:00:00,RFID-025,GPS224,GPS,14.628515,121.104954,,,False,,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:24:13,2026-05-04 17:00:00,RFID-003,GPS276,GPS,14.634204,121.023871,,,False,,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:14,2026-05-04 17:00:00,RFID-010,GPS121,GPS,14.395911,121.085487,,,False,,Electronics,San Pedro,Western Bicutan
+2026-06-04 16:24:16,2026-05-04 17:00:00,RFID-022,GPS414,GPS,14.373273,120.989515,,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:24:16,2026-05-04 17:00:00,RFID-006,GPS236,GPS,14.285984,120.994377,,,False,,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:24:17,2026-05-04 17:00:00,RFID-030,GPS903,GPS,14.650605,120.98574,,,False,,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:24:18,2026-05-04 17:00:00,RFID-019,GPS627,GPS,14.639182,121.05154,,,False,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:24:22,2026-05-04 18:00:00,RFID-008,GPS597,GPS,14.409391,121.015869,,,False,,Electronics,Las Piñas City,Central Signal Village
+2026-06-04 16:24:23,2026-05-04 18:00:00,RFID-005,GPS464,GPS,14.492278,121.082679,,,False,,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:24:24,2026-05-04 18:00:00,RFID-023,GPS759,GPS,15.472915,121.174542,,,False,,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:25,2026-05-04 19:00:00,RFID-021,GPS121,GPS,14.3631,121.061222,,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:24:26,2026-05-04 19:00:00,RFID-016,GPS531,GPS,14.424909,120.985332,,,False,,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:24:28,2026-05-04 19:00:00,RFID-022,GPS329,GPS,14.486778,121.041997,,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:24:29,2026-05-04 19:00:00,RFID-019,GPS993,GPS,14.698072,121.077313,,,False,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:24:30,2026-05-04 19:00:00,RFID-010,GPS864,GPS,14.405341,121.060133,,,False,,Electronics,San Pedro,Western Bicutan
+2026-06-04 16:24:31,2026-05-04 19:00:00,RFID-003,GPS740,GPS,14.65837,120.989051,,,False,,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:34,2026-05-04 19:00:00,RFID-025,GPS540,GPS,14.623421,121.007883,,,False,,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:24:38,2026-05-04 20:00:00,RFID-023,GPS414,GPS,16.286257,121.461123,,,False,,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:39,2026-05-04 20:00:00,RFID-005,GPS240,GPS,14.46598,121.043045,,,False,,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:24:40,2026-05-04 20:00:00,RFID-008,GPS840,GPS,14.479108,120.996162,,,False,,Electronics,Las Piñas City,Central Signal Village
+2026-06-04 16:24:41,2026-05-04 21:00:00,RFID-012,GPS428,GPS,14.447167,121.061245,,,False,,Pharma,Sucat,San Juan
+2026-06-04 16:24:42,2026-05-04 21:00:00,RFID-003,GPS385,GPS,14.628121,120.942921,,,False,,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:43,2026-05-04 21:00:00,RFID-022,GPS398,GPS,14.489902,121.002056,,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:24:44,2026-05-04 21:00:00,RFID-010,GPS309,GPS,14.445704,121.041232,,,False,,Electronics,San Pedro,Western Bicutan
+2026-06-04 16:24:46,2026-05-04 21:00:00,RFID-016,GPS924,GPS,14.457233,121.061346,,,False,,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:24:49,2026-05-04 21:00:00,RFID-025,GPS363,GPS,14.526716,120.998156,,,False,,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:24:51,2026-05-04 22:00:00,RFID-023,GPS136,GPS,17.135915,121.655715,,,False,,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:51,2026-05-04 22:00:00,RFID-008,GPS501,GPS,14.497266,121.062728,,,False,,Electronics,Las Piñas City,Central Signal Village
+2026-06-04 16:24:55,2026-05-04 23:00:00,RFID-012,GPS433,GPS,14.504591,121.057268,,,False,,Pharma,Sucat,San Juan
+2026-06-04 16:24:56,2026-05-04 23:00:00,RFID-010,GPS696,GPS,14.461769,121.05527,,,False,,Electronics,San Pedro,Western Bicutan
+2026-06-04 16:24:57,2026-05-04 23:00:00,RFID-025,GPS609,GPS,14.451242,120.944332,,,False,,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:25:02,2026-05-04 23:00:00,RFID-016,GPS416,GPS,14.453136,121.009184,,,False,,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:25:04,2026-05-04 23:00:00,RFID-022,GPS325,GPS,14.605181,121.007187,,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:25:05,2026-05-05 00:00:00,RFID-023,GPS765,GPS,17.962386,121.82628,,,False,,Pharma,Bel-Air,Canagatan
+2026-06-04 16:25:07,2026-05-05 00:00:00,RFID-008,GPS586,GPS,14.542181,121.040195,,,False,,Electronics,Las Piñas City,Central Signal Village
+2026-06-04 16:25:07,2026-05-05 01:00:00,RFID-025,GPS912,GPS,14.463157,120.858405,,,False,,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:25:09,2026-05-05 01:00:00,RFID-022,GPS107,GPS,14.631555,121.015879,,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:25:11,2026-05-05 01:00:00,RFID-027,GPS331,GPS,14.455864,120.954294,,,False,,Clothing,Bacoor,Quezon City
+2026-06-04 16:25:12,2026-05-05 01:00:00,RFID-010,GPS284,GPS,14.511527,121.024212,,,False,,Electronics,San Pedro,Western Bicutan
+2026-06-04 16:25:13,2026-05-05 01:00:00,RFID-012,GPS425,GPS,14.509776,121.069382,,,False,,Pharma,Sucat,San Juan
+2026-06-04 16:25:14,2026-05-05 01:00:00,RFID-014,GPS614,GPS,14.635531,120.967484,,,False,,Dry Goods,Tatalon,General Mariano Alvarez
+2026-06-04 16:25:15,2026-05-05 01:00:00,RFID-016,GPS366,GPS,14.427764,120.997492,,,False,,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:25:18,2026-05-05 02:00:00,RFID-008,GPS838,GPS,14.488959,121.078629,,,False,,Electronics,Las Piñas City,Central Signal Village
+2026-06-04 16:25:19,2026-05-05 03:00:00,RFID-012,GPS179,GPS,14.521484,121.041907,,,False,,Pharma,Sucat,San Juan
+2026-06-04 16:25:20,2026-05-05 03:00:00,RFID-016,GPS639,GPS,14.447086,121.022225,,,False,,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:25:20,2026-05-05 03:00:00,RFID-004,GPS501,GPS,14.415538,120.919047,,,False,,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:21,2026-05-05 03:00:00,RFID-014,GPS247,GPS,14.567249,121.030861,,,False,,Dry Goods,Tatalon,General Mariano Alvarez
+2026-06-04 16:25:22,2026-05-05 03:00:00,RFID-027,GPS938,GPS,14.503452,121.018218,,,False,,Clothing,Bacoor,Quezon City
+2026-06-04 16:25:27,2026-05-05 05:00:00,RFID-004,GPS379,GPS,14.562921,120.967342,,,False,,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:28,2026-05-05 05:00:00,RFID-012,GPS527,GPS,14.632728,121.040424,,,False,,Pharma,Sucat,San Juan
+2026-06-04 16:25:29,2026-05-05 05:00:00,RFID-014,GPS679,GPS,14.439762,121.017614,,,False,,Dry Goods,Tatalon,General Mariano Alvarez
+2026-06-04 16:25:30,2026-05-05 05:00:00,RFID-027,GPS125,GPS,14.555162,120.983774,,,False,,Clothing,Bacoor,Quezon City
+2026-06-04 16:25:33,2026-05-05 07:00:00,RFID-027,GPS646,GPS,14.590212,121.01302,,,False,,Clothing,Bacoor,Quezon City
+2026-06-04 16:25:33,2026-05-05 07:00:00,RFID-014,GPS658,GPS,14.412551,121.02178,,,False,,Dry Goods,Tatalon,General Mariano Alvarez
+2026-06-04 16:25:34,2026-05-05 07:00:00,RFID-004,GPS798,GPS,14.596504,120.943155,,,False,,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:38,2026-05-05 09:00:00,RFID-027,GPS609,GPS,14.61177,121.037556,,,False,,Clothing,Bacoor,Quezon City
+2026-06-04 16:25:39,2026-05-05 09:00:00,RFID-004,GPS117,GPS,14.625317,120.962525,,,False,,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:40,2026-05-05 09:00:00,RFID-014,GPS785,GPS,14.287189,120.967708,,,False,,Dry Goods,Tatalon,General Mariano Alvarez
+2026-06-04 16:25:41,2026-05-05 11:00:00,RFID-004,GPS849,GPS,14.667568,120.938452,,,False,,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:21:45,2026-05-03 07:00:00,RFID-011,TMP104,Temperature,,,,12.2,False,False,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:50,2026-05-03 09:00:00,RFID-011,TMP505,Temperature,,,,13.6,False,False,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:52,2026-05-03 11:00:00,RFID-011,TMP784,Temperature,,,,13.8,False,False,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:57,2026-05-03 13:00:00,RFID-011,TMP255,Temperature,,,,13.5,False,False,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:59,2026-05-03 14:00:00,RFID-007,TMP623,Temperature,,,,13.4,False,False,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:03,2026-05-03 15:00:00,RFID-011,TMP976,Temperature,,,,13.4,False,False,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:22:07,2026-05-03 16:00:00,RFID-007,TMP349,Temperature,,,,16.4,False,True,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:09,2026-05-03 17:00:00,RFID-018,TMP638,Temperature,,,,-29.2,False,False,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:10,2026-05-03 17:00:00,RFID-001,TMP706,Temperature,,,,5.6,False,False,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:14,2026-05-03 18:00:00,RFID-007,TMP844,Temperature,,,,12.1,False,False,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:15,2026-05-03 19:00:00,RFID-018,TMP161,Temperature,,,,-28.1,False,False,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:17,2026-05-03 19:00:00,RFID-001,TMP191,Temperature,,,,4.5,False,False,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:18,2026-05-03 20:00:00,RFID-007,TMP855,Temperature,,,,12.7,False,False,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:20,2026-05-03 21:00:00,RFID-001,TMP182,Temperature,,,,8.3,False,True,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:21,2026-05-03 21:00:00,RFID-018,TMP504,Temperature,,,,-29.5,False,False,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:23,2026-05-03 22:00:00,RFID-007,TMP383,Temperature,,,,13.0,False,False,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:25,2026-05-03 22:00:00,RFID-017,TMP474,Temperature,,,,12.3,False,False,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:27,2026-05-03 23:00:00,RFID-018,TMP958,Temperature,,,,-29.0,False,False,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:28,2026-05-03 23:00:00,RFID-001,TMP458,Temperature,,,,7.6,False,False,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:31,2026-05-04 00:00:00,RFID-017,TMP143,Temperature,,,,13.4,False,False,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:32,2026-05-04 01:00:00,RFID-001,TMP133,Temperature,,,,2.8,False,False,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:35,2026-05-04 01:00:00,RFID-018,TMP125,Temperature,,,,-28.5,False,False,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:37,2026-05-04 02:00:00,RFID-017,TMP691,Temperature,,,,13.1,False,False,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:43,2026-05-04 03:00:00,RFID-029,TMP963,Temperature,,,,12.5,False,False,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:22:45,2026-05-04 04:00:00,RFID-017,TMP150,Temperature,,,,12.4,False,False,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:45,2026-05-04 04:00:00,RFID-013,TMP974,Temperature,,,,-18.7,False,False,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:22:52,2026-05-04 05:00:00,RFID-029,TMP864,Temperature,,,,13.0,False,False,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:22:56,2026-05-04 06:00:00,RFID-026,TMP206,Temperature,,,,-16.0,False,False,Frozen,Santo Niño,Payatas
+2026-06-04 16:22:58,2026-05-04 06:00:00,RFID-013,TMP620,Temperature,,,,-19.7,False,False,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:22:59,2026-05-04 06:00:00,RFID-017,TMP411,Temperature,,,,15.0,False,True,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:23:04,2026-05-04 07:00:00,RFID-029,TMP113,Temperature,,,,14.0,False,False,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:23:07,2026-05-04 08:00:00,RFID-026,TMP576,Temperature,,,,-19.3,False,False,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:12,2026-05-04 08:00:00,RFID-013,TMP427,Temperature,,,,-18.2,False,False,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:15,2026-05-04 09:00:00,RFID-029,TMP767,Temperature,,,,12.6,False,False,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:23:17,2026-05-04 09:00:00,RFID-030,TMP513,Temperature,,,,12.6,False,False,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:23:19,2026-05-04 09:00:00,RFID-006,TMP773,Temperature,,,,3.0,False,False,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:20,2026-05-04 10:00:00,RFID-026,TMP581,Temperature,,,,-16.2,False,False,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:20,2026-05-04 10:00:00,RFID-013,TMP678,Temperature,,,,-14.8,False,True,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:26,2026-05-04 11:00:00,RFID-030,TMP981,Temperature,,,,14.0,False,False,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:23:27,2026-05-04 11:00:00,RFID-029,TMP278,Temperature,,,,13.6,False,False,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:23:29,2026-05-04 11:00:00,RFID-006,TMP647,Temperature,,,,3.4,False,False,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:32,2026-05-04 11:00:00,RFID-021,TMP852,Temperature,,,,3.0,False,False,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:23:33,2026-05-04 12:00:00,RFID-005,TMP505,Temperature,,,,-28.7,False,False,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:23:35,2026-05-04 12:00:00,RFID-026,TMP875,Temperature,,,,-17.3,False,False,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:38,2026-05-04 12:00:00,RFID-013,TMP952,Temperature,,,,-18.2,False,False,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:40,2026-05-04 13:00:00,RFID-006,TMP575,Temperature,,,,3.2,False,False,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:41,2026-05-04 13:00:00,RFID-021,TMP859,Temperature,,,,6.8,False,False,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:23:43,2026-05-04 13:00:00,RFID-030,TMP261,Temperature,,,,13.4,False,False,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:23:47,2026-05-04 13:00:00,RFID-003,TMP465,Temperature,,,,2.7,False,False,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:23:48,2026-05-04 14:00:00,RFID-005,TMP320,Temperature,,,,-29.3,False,False,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:23:50,2026-05-04 14:00:00,RFID-026,TMP847,Temperature,,,,-19.2,False,False,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:56,2026-05-04 15:00:00,RFID-003,TMP924,Temperature,,,,3.0,False,False,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:23:58,2026-05-04 15:00:00,RFID-006,TMP527,Temperature,,,,2.4,False,False,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:59,2026-05-04 15:00:00,RFID-021,TMP499,Temperature,,,,6.9,False,False,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:24:01,2026-05-04 15:00:00,RFID-030,TMP629,Temperature,,,,14.0,False,False,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:24:03,2026-05-04 16:00:00,RFID-005,TMP401,Temperature,,,,-29.6,False,False,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:24:07,2026-05-04 16:00:00,RFID-023,TMP994,Temperature,,,,4.1,False,False,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:08,2026-05-04 17:00:00,RFID-022,TMP423,Temperature,,,,2.4,False,False,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:24:08,2026-05-04 17:00:00,RFID-006,TMP823,Temperature,,,,3.6,False,False,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:24:09,2026-05-04 17:00:00,RFID-021,TMP818,Temperature,,,,5.3,False,False,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:24:10,2026-05-04 17:00:00,RFID-003,TMP459,Temperature,,,,2.9,False,False,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:10,2026-05-04 17:00:00,RFID-025,TMP402,Temperature,,,,3.5,False,False,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:24:11,2026-05-04 17:00:00,RFID-030,TMP216,Temperature,,,,13.4,False,False,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:24:20,2026-05-04 18:00:00,RFID-023,TMP773,Temperature,,,,10.7,False,True,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:22,2026-05-04 18:00:00,RFID-005,TMP790,Temperature,,,,-28.1,False,False,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:24:27,2026-05-04 19:00:00,RFID-016,TMP613,Temperature,,,,-28.4,False,False,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:24:27,2026-05-04 19:00:00,RFID-003,TMP970,Temperature,,,,2.4,False,False,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:33,2026-05-04 19:00:00,RFID-025,TMP544,Temperature,,,,3.4,False,False,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:24:35,2026-05-04 19:00:00,RFID-022,TMP728,Temperature,,,,3.4,False,False,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:24:36,2026-05-04 19:00:00,RFID-021,TMP199,Temperature,,,,3.4,False,False,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:24:36,2026-05-04 20:00:00,RFID-023,TMP380,Temperature,,,,6.6,False,False,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:37,2026-05-04 20:00:00,RFID-005,TMP699,Temperature,,,,-28.2,False,False,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:24:41,2026-05-04 21:00:00,RFID-022,TMP547,Temperature,,,,2.7,False,False,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:24:44,2026-05-04 21:00:00,RFID-025,TMP642,Temperature,,,,3.1,False,False,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:24:45,2026-05-04 21:00:00,RFID-012,TMP901,Temperature,,,,10.4,False,True,Pharma,Sucat,San Juan
+2026-06-04 16:24:46,2026-05-04 21:00:00,RFID-016,TMP710,Temperature,,,,-29.3,False,False,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:24:50,2026-05-04 21:00:00,RFID-003,TMP241,Temperature,,,,3.3,False,False,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:52,2026-05-04 22:00:00,RFID-023,TMP145,Temperature,,,,10.0,False,True,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:54,2026-05-04 23:00:00,RFID-016,TMP469,Temperature,,,,-28.9,False,False,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:24:59,2026-05-04 23:00:00,RFID-022,TMP349,Temperature,,,,3.0,False,False,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:24:59,2026-05-04 23:00:00,RFID-025,TMP698,Temperature,,,,3.2,False,False,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:25:03,2026-05-04 23:00:00,RFID-012,TMP934,Temperature,,,,5.0,False,False,Pharma,Sucat,San Juan
+2026-06-04 16:25:06,2026-05-05 00:00:00,RFID-023,TMP647,Temperature,,,,2.3,False,False,Pharma,Bel-Air,Canagatan
+2026-06-04 16:25:09,2026-05-05 01:00:00,RFID-025,TMP275,Temperature,,,,2.8,False,False,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:25:10,2026-05-05 01:00:00,RFID-022,TMP108,Temperature,,,,2.5,False,False,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:25:15,2026-05-05 01:00:00,RFID-012,TMP206,Temperature,,,,6.1,False,False,Pharma,Sucat,San Juan
+2026-06-04 16:25:16,2026-05-05 01:00:00,RFID-016,TMP760,Temperature,,,,-26.9,False,True,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:25:23,2026-05-05 03:00:00,RFID-012,TMP819,Temperature,,,,5.7,False,False,Pharma,Sucat,San Juan
+2026-06-04 16:25:24,2026-05-05 03:00:00,RFID-004,TMP896,Temperature,,,,-28.6,False,False,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:25,2026-05-05 03:00:00,RFID-016,TMP629,Temperature,,,,-28.9,False,False,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:25:30,2026-05-05 05:00:00,RFID-004,TMP866,Temperature,,,,-29.1,False,False,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:31,2026-05-05 05:00:00,RFID-012,TMP185,Temperature,,,,2.6,False,False,Pharma,Sucat,San Juan
+2026-06-04 16:25:36,2026-05-05 07:00:00,RFID-004,TMP453,Temperature,,,,-29.1,False,False,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:38,2026-05-05 09:00:00,RFID-004,TMP106,Temperature,,,,-29.9,False,False,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:42,2026-05-05 11:00:00,RFID-004,TMP706,Temperature,,,,-29.4,False,False,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:21:47,2026-05-03 08:00:00,RFID-011,RFD702,RFID,,,VERIFIED,,False,,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:49,2026-05-03 09:00:00,RFID-020,RFD166,RFID,,,VERIFIED,,False,,Industrial,Paco,Pandacan
+2026-06-04 16:21:51,2026-05-03 10:00:00,RFID-028,RFD922,RFID,,,FLAGGED,,True,,Industrial,Bayanan,Marikina Heights
+2026-06-04 16:21:55,2026-05-03 12:00:00,RFID-011,RFD676,RFID,,,VERIFIED,,False,,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:21:56,2026-05-03 12:00:00,RFID-020,RFD700,RFID,,,VERIFIED,,False,,Industrial,Paco,Pandacan
+2026-06-04 16:22:04,2026-05-03 15:00:00,RFID-011,RFD506,RFID,,,VERIFIED,,False,,Cool-Chain,Sampaloc,Santa Ana
+2026-06-04 16:22:04,2026-05-03 15:00:00,RFID-028,RFD425,RFID,,,VERIFIED,,False,,Industrial,Bayanan,Marikina Heights
+2026-06-04 16:22:06,2026-05-03 16:00:00,RFID-007,RFD257,RFID,,,VERIFIED,,False,,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:08,2026-05-03 17:00:00,RFID-018,RFD535,RFID,,,VERIFIED,,False,,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:12,2026-05-03 18:00:00,RFID-007,RFD129,RFID,,,FLAGGED,,True,,Cool-Chain,Taguig City,Banco Filipino International Village
+2026-06-04 16:22:13,2026-05-03 18:00:00,RFID-001,RFD169,RFID,,,VERIFIED,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:22,2026-05-03 21:00:00,RFID-001,RFD713,RFID,,,VERIFIED,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:23,2026-05-03 22:00:00,RFID-018,RFD985,RFID,,,VERIFIED,,False,,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:29,2026-05-04 00:00:00,RFID-017,RFD377,RFID,,,VERIFIED,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:34,2026-05-04 01:00:00,RFID-015,RFD972,RFID,,,VERIFIED,,False,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:22:34,2026-05-04 01:00:00,RFID-009,RFD534,RFID,,,VERIFIED,,False,,Industrial,Manila,Western Bicutan
+2026-06-04 16:22:38,2026-05-04 02:00:00,RFID-017,RFD659,RFID,,,VERIFIED,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:22:39,2026-05-04 02:00:00,RFID-001,RFD970,RFID,,,VERIFIED,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:42,2026-05-04 03:00:00,RFID-018,RFD539,RFID,,,VERIFIED,,False,,Deep Freeze,Sampaloc,Bel-Air
+2026-06-04 16:22:48,2026-05-04 04:00:00,RFID-024,RFD145,RFID,,,VERIFIED,,False,,Industrial,Upper Bicutan,Santamesa
+2026-06-04 16:22:51,2026-05-04 05:00:00,RFID-009,RFD526,RFID,,,VERIFIED,,False,,Industrial,Manila,Western Bicutan
+2026-06-04 16:22:53,2026-05-04 05:00:00,RFID-029,RFD405,RFID,,,FLAGGED,,True,,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:22:53,2026-05-04 05:00:00,RFID-001,RFD549,RFID,,,VERIFIED,,False,,Pharma,General Mariano Alvarez,San Andres
+2026-06-04 16:22:54,2026-05-04 05:00:00,RFID-013,RFD487,RFID,,,FLAGGED,,True,,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:22:55,2026-05-04 06:00:00,RFID-026,RFD629,RFID,,,VERIFIED,,False,,Frozen,Santo Niño,Payatas
+2026-06-04 16:22:58,2026-05-04 06:00:00,RFID-015,RFD966,RFID,,,VERIFIED,,False,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:23:03,2026-05-04 07:00:00,RFID-029,RFD866,RFID,,,VERIFIED,,False,,Cool-Chain,Santo Niño,Pasay City
+2026-06-04 16:23:05,2026-05-04 07:00:00,RFID-024,RFD584,RFID,,,VERIFIED,,False,,Industrial,Upper Bicutan,Santamesa
+2026-06-04 16:23:08,2026-05-04 08:00:00,RFID-017,RFD910,RFID,,,VERIFIED,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:23:09,2026-05-04 08:00:00,RFID-002,RFD315,RFID,,,VERIFIED,,False,,Dry Goods,San Isidro,Santamesa
+2026-06-04 16:23:14,2026-05-04 09:00:00,RFID-013,RFD263,RFID,,,VERIFIED,,False,,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:18,2026-05-04 09:00:00,RFID-015,RFD250,RFID,,,FLAGGED,,True,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:23:22,2026-05-04 10:00:00,RFID-030,RFD215,RFID,,,VERIFIED,,False,,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:23:24,2026-05-04 10:00:00,RFID-006,RFD948,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:25,2026-05-04 11:00:00,RFID-024,RFD858,RFID,,,VERIFIED,,False,,Industrial,Upper Bicutan,Santamesa
+2026-06-04 16:23:32,2026-05-04 12:00:00,RFID-026,RFD291,RFID,,,VERIFIED,,False,,Frozen,Santo Niño,Payatas
+2026-06-04 16:23:35,2026-05-04 12:00:00,RFID-002,RFD503,RFID,,,VERIFIED,,False,,Dry Goods,San Isidro,Santamesa
+2026-06-04 16:23:37,2026-05-04 12:00:00,RFID-017,RFD842,RFID,,,VERIFIED,,False,,Cool-Chain,Bel-Air,Bagumbayan
+2026-06-04 16:23:40,2026-05-04 13:00:00,RFID-021,RFD588,RFID,,,VERIFIED,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:23:42,2026-05-04 13:00:00,RFID-019,RFD217,RFID,,,VERIFIED,,False,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:23:48,2026-05-04 14:00:00,RFID-013,RFD967,RFID,,,VERIFIED,,False,,Frozen,Upper Bicutan,Banco Filipino International Village
+2026-06-04 16:23:49,2026-05-04 14:00:00,RFID-005,RFD705,RFID,,,VERIFIED,,False,,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:23:50,2026-05-04 14:00:00,RFID-015,RFD449,RFID,,,VERIFIED,,False,,Dry Goods,San Andres,Poblacion
+2026-06-04 16:23:53,2026-05-04 14:00:00,RFID-006,RFD249,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:23:57,2026-05-04 15:00:00,RFID-003,RFD319,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:01,2026-05-04 15:00:00,RFID-030,RFD741,RFID,,,VERIFIED,,False,,Cool-Chain,Karuhatan,Tatalon
+2026-06-04 16:24:02,2026-05-04 16:00:00,RFID-023,RFD104,RFID,,,VERIFIED,,False,,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:03,2026-05-04 16:00:00,RFID-026,RFD435,RFID,,,VERIFIED,,False,,Frozen,Santo Niño,Payatas
+2026-06-04 16:24:06,2026-05-04 16:00:00,RFID-021,RFD735,RFID,,,VERIFIED,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:24:06,2026-05-04 16:00:00,RFID-019,RFD137,RFID,,,VERIFIED,,False,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:24:15,2026-05-04 17:00:00,RFID-005,RFD301,RFID,,,VERIFIED,,False,,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:24:19,2026-05-04 18:00:00,RFID-006,RFD916,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Upper Bicutan,General Mariano Alvarez
+2026-06-04 16:24:19,2026-05-04 18:00:00,RFID-025,RFD573,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:24:21,2026-05-04 18:00:00,RFID-003,RFD933,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:24:25,2026-05-04 18:00:00,RFID-008,RFD219,RFID,,,VERIFIED,,False,,Electronics,Las Piñas City,Central Signal Village
+2026-06-04 16:24:31,2026-05-04 19:00:00,RFID-010,RFD470,RFID,,,VERIFIED,,False,,Electronics,San Pedro,Western Bicutan
+2026-06-04 16:24:32,2026-05-04 19:00:00,RFID-021,RFD389,RFID,,,VERIFIED,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:24:33,2026-05-04 19:00:00,RFID-022,RFD508,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:24:38,2026-05-04 20:00:00,RFID-019,RFD997,RFID,,,VERIFIED,,False,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:24:47,2026-05-04 21:00:00,RFID-005,RFD617,RFID,,,VERIFIED,,False,,Deep Freeze,Bayanan,Bagumbayan
+2026-06-04 16:24:48,2026-05-04 21:00:00,RFID-012,RFD134,RFID,,,VERIFIED,,False,,Pharma,Sucat,San Juan
+2026-06-04 16:24:49,2026-05-04 21:00:00,RFID-016,RFD934,RFID,,,VERIFIED,,False,,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:24:53,2026-05-04 22:00:00,RFID-023,RFD115,RFID,,,VERIFIED,,False,,Pharma,Bel-Air,Canagatan
+2026-06-04 16:24:54,2026-05-04 22:00:00,RFID-025,RFD981,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Pansol,Rosario
+2026-06-04 16:24:56,2026-05-04 23:00:00,RFID-008,RFD886,RFID,,,VERIFIED,,False,,Electronics,Las Piñas City,Central Signal Village
+2026-06-04 16:24:58,2026-05-04 23:00:00,RFID-003,RFD423,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Pateros,Malabon
+2026-06-04 16:25:00,2026-05-04 23:00:00,RFID-022,RFD915,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:25:01,2026-05-04 23:00:00,RFID-010,RFD882,RFID,,,VERIFIED,,False,,Electronics,San Pedro,Western Bicutan
+2026-06-04 16:25:02,2026-05-04 23:00:00,RFID-016,RFD378,RFID,,,VERIFIED,,False,,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:25:04,2026-05-05 00:00:00,RFID-021,RFD977,RFID,,,VERIFIED,,False,,Pharma,General Mariano Alvarez,Poblacion
+2026-06-04 16:25:08,2026-05-05 01:00:00,RFID-019,RFD338,RFID,,,FLAGGED,,True,,Dry Goods,Banco Filipino International Village,Payatas
+2026-06-04 16:25:12,2026-05-05 01:00:00,RFID-027,RFD245,RFID,,,FLAGGED,,True,,Clothing,Bacoor,Quezon City
+2026-06-04 16:25:17,2026-05-05 02:00:00,RFID-022,RFD779,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:25:17,2026-05-05 02:00:00,RFID-014,RFD865,RFID,,,VERIFIED,,False,,Dry Goods,Tatalon,General Mariano Alvarez
+2026-06-04 16:25:22,2026-05-05 03:00:00,RFID-012,RFD741,RFID,,,VERIFIED,,False,,Pharma,Sucat,San Juan
+2026-06-04 16:25:25,2026-05-05 04:00:00,RFID-004,RFD493,RFID,,,VERIFIED,,False,,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:26,2026-05-05 04:00:00,RFID-016,RFD250,RFID,,,FLAGGED,,True,,Deep Freeze,San Antonio,San Isidro
+2026-06-04 16:25:27,2026-05-05 05:00:00,RFID-014,RFD578,RFID,,,VERIFIED,,False,,Dry Goods,Tatalon,General Mariano Alvarez
+2026-06-04 16:25:32,2026-05-05 06:00:00,RFID-022,RFD214,RFID,,,VERIFIED,,False,,Chill/Refrigerated,Putatan,Tondo
+2026-06-04 16:25:35,2026-05-05 07:00:00,RFID-027,RFD666,RFID,,,VERIFIED,,False,,Clothing,Bacoor,Quezon City
+2026-06-04 16:25:36,2026-05-05 07:00:00,RFID-012,RFD369,RFID,,,FLAGGED,,True,,Pharma,Sucat,San Juan
+2026-06-04 16:25:37,2026-05-05 08:00:00,RFID-004,RFD304,RFID,,,VERIFIED,,False,,Deep Freeze,Bacoor,Valenzuela
+2026-06-04 16:25:41,2026-05-05 11:00:00,RFID-014,RFD917,RFID,,,FLAGGED,,True,,Dry Goods,Tatalon,General Mariano Alvarez
+2026-06-04 16:25:43,2026-05-05 13:00:00,RFID-004,RFD765,RFID,,,VERIFIED,,False,,Deep Freeze,Bacoor,Valenzuela
