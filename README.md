@@ -3,13 +3,14 @@
 > MO-IT148 — Applications Development and Emerging Technologies <br>
 > Section: H3101 <br>
 > Group: NodeBlk <br>
-> Last Updated: May 27, 2026
+> Last Updated: June 5, 2026
 
 ---
 
 ## Project Overview
 
 A blockchain-powered logistics tracking system developed for the Applications Development and Emerging Technologies class (MO-IT148). This repository contains the Milestone 1 submission — integrating IoT data simulation with on-chain storage via Web3.py. It simulates GPS, RFID, and temperature sensor readings across 30 shipments and stores them on a local blockchain through a Solidity smart contract deployed on Ganache.
+
 
 ---
 
@@ -32,6 +33,15 @@ A blockchain-powered logistics tracking system developed for the Applications De
   - Type-routed bulk write — GPS, Temperature, and RFID readings each routed to specialized contract functions
   - Try/except per row to skip failures without stopping the loop
   - Post-write verification across all five on-chain counters
+- Blockchain data retrieval and cleaning pipeline
+  - Full retrieval of GPS, Temperature, and RFID records from on-chain arrays
+  - Dual-timestamp structure: blockchain write time (`blockchain_timestamp`) vs. original sensor time (`sensor_timestamp`)
+  - Temperature decoding from `int16` × 10 back to float °C
+  - Temperature breach detection per goods category against simulation-defined safe ranges
+  - RFID flag derivation from `scan_status` without CSV lookup
+  - Shipment metadata enrichment (goods category, origin, destination) via live `getShipment()` calls
+  - NumPy descriptive statistics (mean, min, max, std) per sensor type
+  - Export to `iot_cleaned_data.csv` and `sensor_stats_summary.csv`
 
 ---
 
@@ -62,14 +72,13 @@ A blockchain-powered logistics tracking system developed for the Applications De
 │   ├── rfid_readings.csv             ← RFID checkpoint scan readings
 │   ├── temperature_readings.csv      ← temperature sensor readings
 │   ├── iot_data.csv                  ← unified IoT feed sorted by timestamp
+│   ├── iot_cleaned_data.csv          ← cleaned blockchain-retrieved data with enriched columns
+│   ├── sensor_stats_summary.csv      ← NumPy descriptive stats per sensor type
 │   └── ph.csv                        ← Philippine city reference data (coordinates)
-├── docs/
-│   ├── Code Template.pdf             ← Week 4-5 reference template
-│   ├── MO-IT148 Milestone 1.pdf      ← submission worksheet
-│   └── group-docs/                   ← brainstorming + Week 2 design proposal
 ├── notebooks/
 │   ├── smart-logistics-iot-simulation.ipynb           ← Week 2 IoT data simulation
 │   └── smart-logistics-blockchain-integration.ipynb   ← Week 4-5 Web3.py pipeline
+│   └── blockchain-data-retrieval.ipynb                ← Week 6 data retrieval + cleaning + stats
 ├── requirements.txt
 └── README.md
 ```
@@ -115,6 +124,43 @@ Two-step pipeline. First registers all 30 shipments from `shipment_registry.csv`
 
 **Section 5 — Verification (`run_verification()`)**
 Reads and prints all five on-chain counters — `shipmentCount()`, `iotRecordCount()`, `gpsRecordCount()`, `tempRecordCount()`, `rfidRecordCount()` — then retrieves and prints the first real shipment by calling `getAllRFIDTags()[1]` (index `[1]` skips the `TEST-001` dummy registered in Section 3) and `getShipment()` on that tag. Also dynamically retrieves the first real IoT record from the blockchain by reading the first row of `iot_data.csv` to determine its data type, then calling the correct contract array — `tempRecords(0)`, `gpsRecords(0)`, or `rfidRecords(0)` — to read the actual on-chain value. Confirms data was correctly routed into separate on-chain arrays per data type.
+
+### `blockchain-data-retrieval.ipynb` — Week 6 Data Retrieval + Cleaning + Stats
+End-to-end retrieval and analysis pipeline in eight labeled sections.
+
+**Section 1 — Setup**
+Imports, ABI load from `contracts/IoTDataStorage_compData.json`, contract instantiation, and Ganache connection confirmation. Prints on-chain counters for GPS (150), Temperature (95), and RFID (84) records as a pre-retrieval baseline. Ganache must be running with the contract deployed before this cell executes.
+
+**Section 2 — Retrieval**
+Loops through all three on-chain arrays — `gpsRecords`, `tempRecords`, `rfidRecords` — using their respective count functions as loop bounds. Collects raw tuples into typed row dicts and builds one DataFrame per sensor type. Prints a warning if any DataFrame comes back empty, which indicates a Ganache session mismatch.
+
+**Section 3 — DataFrame Construction**
+Concatenates the three sensor DataFrames into a single `iot_records_df` using `pd.concat(..., ignore_index=True)`. Columns absent for a given sensor type (e.g. `latitude` for Temperature rows) become `NaN`. Prints total record count (329) and column dtypes.
+
+**Section 4 — Cleaning**
+Applies all type conversions and data quality steps to produce `iot_cleaned_df`:
+- Unix `blockchain_timestamp` → `datetime64` via `pd.to_datetime(..., unit='s')`
+- `sensor_timestamp` joined from `iot_data.csv` on `rfid_tag + device_id` — the only CSV pull in the pipeline, needed because sensor timestamps were never stored on-chain
+- `latitude` and `longitude` cast from string to float via `pd.to_numeric(..., errors='coerce')`
+- `temperature_raw` (on-chain `int16`) divided by 10 to recover float °C, then the raw column is dropped
+- `TEST-001` dummy excluded immediately after the sensor timestamp merge
+- `is_flagged` boolean derived from `scan_status` comparison — no CSV lookup required
+- `temp_breach` boolean computed per Temperature row by checking `temperature_c` against `TEMP_RANGES` for the shipment's goods category; non-temp-regulated rows and non-Temperature sensor rows return `None`
+- `goods_category`, `origin`, and `destination` enriched via live `getShipment()` calls for every RFID tag returned by `getAllRFIDTags()`
+
+**Section 5 — RFID Filter**
+Groups `iot_cleaned_df` by `rfid_tag` using `groupby()`. Prints the number of unique shipments (30) and lists all group keys. The resulting `iot_by_rfid` GroupBy object is used in downstream per-shipment analysis via `.get_group("RFID-XXX")`.
+
+**Section 6 — Stats**
+Iterates sensor type groups and computes NumPy descriptive statistics — mean, min, max, std — for `latitude` (GPS rows) and `temperature_c` (Temperature rows). RFID rows are skipped as they have no numeric column. Results are collected into `sensor_stats_df` and printed.
+
+**Section 7 — Export**
+Exports two CSVs to `data/`:
+- `iot_cleaned_data.csv` — full cleaned tidy dataset, primary input for Week 7 visualization
+- `sensor_stats_summary.csv` — sensor-level summary table for dashboard stat cards
+
+**Section 8 — Preview**
+Displays the first 10 rows of `iot_cleaned_df` and prints final pipeline totals: 329 clean records, 30 unique shipments, sensor types `['GPS', 'Temperature', 'RFID']`.
 
 ---
 
@@ -177,6 +223,16 @@ Reads and prints all five on-chain counters — `shipmentCount()`, `iotRecordCou
 4. Run all cells in order from Section 1 through Section 5
 5. Section 5 prints a verification summary of all records stored on-chain
 
+### Data Retrieval & Analysis
+1. Ensure Ganache is still running with the same deployed contract
+2. Open the retrieval notebook
+   ```
+   jupyter notebook notebooks/blockchain-data-retrieval.ipynb
+   ```
+3. In Section 1, update `CONTRACT_ADDRESS` to match the current Ganache deployment
+4. Run all cells in order from Section 1 through Section 8
+5. Section 7 exports `iot_cleaned_data.csv` and `sensor_stats_summary.csv` to `data/`
+   
 ---
 
 ## Weekly Progress
@@ -188,7 +244,7 @@ Reads and prints all five on-chain counters — `shipmentCount()`, `iotRecordCou
 | Week 3 | Smart Contract Data Storage/Development | ✅ |
 | Week 4 | Blockchain Ledger Draft | ✅ |
 | Week 5 | Blockchain Ledger Submission | ✅ |
-| Week 6 | Data Retrieval & Processing | |
+| Week 6 | Data Retrieval & Processing | ✅ |
 | Week 7 | Line Plot of IoT Sensor Readings | |
 
 ---
