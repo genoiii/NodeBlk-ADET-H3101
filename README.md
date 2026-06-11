@@ -74,6 +74,7 @@ A blockchain-powered logistics tracking system developed for the Applications De
 │   ├── iot_data.csv                  ← unified IoT feed sorted by timestamp
 │   ├── iot_cleaned_data.csv          ← cleaned blockchain-retrieved data with enriched columns
 │   ├── sensor_stats_summary.csv      ← NumPy descriptive stats per sensor type
+│   ├── iot_sensor_readings_over_time.png      ← Week 7 line plot saved at 150 DPI
 │   └── ph.csv                        ← Philippine city reference data (coordinates)
 ├── notebooks/
 │   ├── smart-logistics-iot-simulation.ipynb           ← Week 2 IoT data simulation
@@ -178,6 +179,8 @@ Primary deliverable. Each panel has a descriptive title and labeled y-axis. The 
 - Panel 1 — GPS: plots `latitude` over time using `units="rfid_tag"` and `estimator=None` so each shipment gets its own line rather than being - averaged across shared timestamps
 - Panel 2 — Temperature: plots `temperature_c` over time the same way; includes a dashed reference line at 0°C separating frozen from chilled goods
 - Panel 3 — RFID: aggregates flagged scans into hourly counts via `dt.floor("h")` and `groupby`, then plots flagged scans per hour as a single line
+
+Followed by a short written analysis covering key patterns, anomalies, and temperature breaches observed across all three sensor panels.
 
 **Section 4 — Alternative: Single Overlay Plot**
 Overlays GPS and Temperature on one axis for a direct side-by-side comparison using `hue="sensor_type"`, mirroring the Week 7 code template structure. A `numeric_value` column is constructed via `np.where` to unify latitude and temperature onto a shared axis. RFID is excluded as it has no comparable numeric value. The faceted panels in Section 3 are the primary deliverable since the differing scales make this view harder to read.
