@@ -3,7 +3,7 @@
 > MO-IT148 — Applications Development and Emerging Technologies (ADET) <br>
 > Section: H3101 <br>
 > Group: NodeBlk <br>
-> Last Updated: June 5, 2026
+> Last Updated: June 13, 2026
 
 ---
 
@@ -42,6 +42,11 @@ A blockchain-powered logistics tracking system developed for the Applications De
   - Shipment metadata enrichment (goods category, origin, destination) via live `getShipment()` calls
   - NumPy descriptive statistics (mean, min, max, std) per sensor type
   - Export to `iot_cleaned_data.csv` and `sensor_stats_summary.csv`
+- IoT sensor line plot visualization
+  - Three stacked panels sharing a common time axis (GPS, Temperature, RFID)
+  - Temperature breach markers (✕) overlaid on breach points
+  - Hourly flagged scan aggregation for RFID panel
+  - Saved to `data/iot_sensor_readings_over_time.png` at 150 DPI
 
 ---
 
@@ -50,6 +55,7 @@ A blockchain-powered logistics tracking system developed for the Applications De
 - Python
 - pandas, numpy, random
 - web3
+- matplotlib, matplotlib.dates, seaborn
 - Jupyter Notebook
 - Remix IDE (Solidity 0.8.18)
 - Ganache (local Ethereum blockchain)
@@ -74,11 +80,13 @@ A blockchain-powered logistics tracking system developed for the Applications De
 │   ├── iot_data.csv                  ← unified IoT feed sorted by timestamp
 │   ├── iot_cleaned_data.csv          ← cleaned blockchain-retrieved data with enriched columns
 │   ├── sensor_stats_summary.csv      ← NumPy descriptive stats per sensor type
+│   ├── iot_sensor_readings_over_time.png      ← Week 7 line plot saved at 150 DPI
 │   └── ph.csv                        ← Philippine city reference data (coordinates)
 ├── notebooks/
 │   ├── smart-logistics-iot-simulation.ipynb           ← Week 2 IoT data simulation
 │   └── smart-logistics-blockchain-integration.ipynb   ← Week 4-5 Web3.py pipeline
 │   └── blockchain-data-retrieval.ipynb                ← Week 6 data retrieval + cleaning + stats
+│   └── iot-sensor-line-plot.ipynb                     ← Week 7 line plot visualization
 ├── requirements.txt
 └── README.md
 ```
@@ -161,6 +169,30 @@ Exports two CSVs to `data/`:
 
 **Section 8 — Preview**
 Displays the first 10 rows of `iot_cleaned_df` and prints final pipeline totals: 329 clean records, 30 unique shipments, sensor types `['GPS', 'Temperature', 'RFID']`.
+
+### `iot-sensor-line-plot.ipynb` — Week 7 Line Plot of IoT Sensor Readings Over Time
+Visualizes the cleaned IoT sensor data produced in Week 6 (`iot_cleaned_data.csv`). Each sensor type is plotted in its own color against the original sensor capture time, making patterns, trends, and anomalies easy to read.
+
+**Section 1 — Setup**
+Imports pandas, numpy, matplotlib, matplotlib.dates, and seaborn. Sets the visualization style via `sns.set_theme(style="whitegrid")`. Defines a `SENSOR_COLORS` dict assigning one fixed hex color per sensor type — blue for GPS, red for Temperature, green for RFID — reused across all panels and the legend.
+
+**Section 2 — Load Cleaned Data**
+Loads `iot_cleaned_data.csv` from the Week 6 export. Converts both `sensor_timestamp` and `blockchain_timestamp` to datetime. Sorts rows chronologically by `sensor_timestamp` so lines connect points in time order. Prints the total record count, sensor type breakdown, and time range.
+
+**Section 3 — Line Plot: One Panel Per Sensor Type**
+Primary deliverable. Each panel has a descriptive title and labeled y-axis. The shared x-axis uses `mdates.DateFormatter` with labels rotated 45°. The figure title reads "carGO PH — IoT Sensor Readings Over Time". Produces three stacked panels sharing a common time axis via `plt.subplots(3, 1, sharex=True)`:
+
+- Panel 1 — GPS: plots `latitude` over time using `units="rfid_tag"` and `estimator=None` so each shipment gets its own line rather than being averaged across shared timestamps
+- Panel 2 — Temperature: plots `temperature_c` over time the same way; includes a dashed reference line at 0°C separating frozen from chilled goods; temperature breach points are overlaid with ✕ markers — only on this panel because `temp_breach` is a concept exclusive to temperature-regulated shipments
+- Panel 3 — RFID: aggregates flagged scans into hourly counts via `dt.floor("h")` and `groupby`, then plots flagged scans per hour as a single line
+
+Followed by a short written analysis covering key patterns, anomalies, and temperature breaches observed across all three sensor panels.
+
+**Section 4 — Alternative: Single Overlay Plot**
+Overlays GPS and Temperature on one axis for a direct side-by-side comparison using `hue="sensor_type"`, mirroring the Week 7 code template structure. A `numeric_value` column is constructed via `np.where` to unify latitude and temperature onto a shared axis. RFID is excluded — while Panel 3 in Section 3 produces a numeric representation by aggregating flagged scans into hourly counts, this overlay plots raw per-shipment readings instead, and RFID has no equivalent raw numeric value that can meaningfully share a Y-axis with GPS latitude and temperature. The faceted panels in Section 3 are the primary deliverable since the differing scales make this view harder to read.
+
+**Section 5 — Save the Plot**
+Saves the faceted figure to `data/iot_sensor_readings_over_time.png` at 150 DPI using `bbox_inches="tight"`.
 
 ---
 
@@ -245,7 +277,7 @@ Displays the first 10 rows of `iot_cleaned_df` and prints final pipeline totals:
 | Week 4 | Blockchain Ledger Draft | ✅ |
 | Week 5 | Blockchain Ledger Submission | ✅ |
 | Week 6 | Data Retrieval & Processing | ✅ |
-| Week 7 | Line Plot of IoT Sensor Readings | |
+| Week 7 | Line Plot of IoT Sensor Readings | ✅ |
 
 ---
 
