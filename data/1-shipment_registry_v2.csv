@@ -1,0 +1,51 @@
+rfid_tag,goods_category,origin,destination,package_count,vehicle_id,driver_id,scheduled_delivery_dt,actual_delivery_dt,shipment_status,delay_reason
+RFID-001,Pharma,Tatalon,Pasig City,9,VH-001,DR-001,2026-05-05 20:00:00,2026-05-05 20:00:00,Delivered,None
+RFID-002,Deep Freeze,Bayanan,Taguig City,2,VH-002,DR-002,2026-05-06 20:00:00,2026-05-06 20:00:00,Delivered,None
+RFID-003,Industrial,Canagatan,Mandaluyong City,13,VH-003,DR-003,2026-05-06 07:00:00,2026-05-06 07:00:00,Delivered,None
+RFID-004,Cool-Chain,Central Signal Village,Don Bosco,1,VH-004,DR-004,2026-05-07 17:00:00,2026-05-07 17:00:00,Delivered,None
+RFID-005,Cool-Chain,Karuhatan,Quiapo,10,VH-005,DR-005,2026-05-06 10:00:00,2026-05-06 10:00:00,Delivered,None
+RFID-006,Dry Goods,Pasay City,Bel-Air,39,VH-006,DR-006,2026-05-05 19:00:00,2026-05-05 22:00:00,Delayed,RFID flag
+RFID-007,Frozen,Malabon,Quiapo,25,VH-007,DR-007,2026-05-05 21:00:00,2026-05-05 21:00:00,Delivered,None
+RFID-008,Dry Goods,Canagatan,San Antonio,37,VH-008,DR-008,2026-05-07 12:00:00,2026-05-07 12:00:00,Delivered,None
+RFID-009,Cool-Chain,Las Piñas City,Marikina Heights,6,VH-009,DR-009,2026-05-04 04:00:00,2026-05-04 04:00:00,Delivered,None
+RFID-010,Dry Goods,Bagong Pag-Asa,Mandaluyong City,11,VH-010,DR-010,2026-05-05 06:00:00,2026-05-05 06:00:00,Delivered,None
+RFID-011,Frozen,Santa Cruz,San Andres,39,VH-011,DR-011,2026-05-06 14:00:00,2026-05-06 14:00:00,Delivered,None
+RFID-012,Clothing,Tatalon,Bacoor,25,VH-012,DR-012,2026-05-08 12:00:00,2026-05-08 12:00:00,Delivered,None
+RFID-013,Deep Freeze,San Pedro,Don Bosco,15,VH-013,DR-013,2026-05-07 07:00:00,2026-05-07 07:00:00,Delivered,None
+RFID-014,Pharma,Quiapo,Zamboanga City,37,VH-014,DR-014,2026-05-06 11:00:00,2026-05-06 11:00:00,Delivered,None
+RFID-015,Electronics,Pinyahan,Central Signal Village,42,VH-015,DR-015,2026-05-05 23:00:00,2026-05-05 23:00:00,Delivered,None
+RFID-016,Industrial,Putatan,City of Parañaque,35,VH-016,DR-016,2026-05-05 11:00:00,2026-05-05 11:00:00,Delivered,None
+RFID-017,Dry Goods,Malabon,Karuhatan,15,VH-017,DR-017,2026-05-08 09:00:00,2026-05-08 09:00:00,Delivered,None
+RFID-018,Frozen,Valenzuela,Banco Filipino International Village,10,VH-018,DR-018,2026-05-06 14:00:00,2026-05-06 14:00:00,Delivered,None
+RFID-019,Clothing,Tatalon,Bacoor,34,VH-019,DR-019,2026-05-07 14:00:00,2026-05-07 22:00:00,Delayed,Traffic
+RFID-020,Industrial,Malabon,San Antonio,49,VH-020,DR-020,2026-05-05 14:00:00,2026-05-05 14:00:00,Delivered,None
+RFID-021,Chill/Refrigerated,San Pedro,Pansol,30,VH-021,DR-021,2026-05-05 20:00:00,2026-05-05 20:00:00,Delivered,None
+RFID-022,Industrial,Manila,Bayanan,7,VH-022,DR-022,2026-05-06 11:00:00,2026-05-06 11:00:00,Delivered,None
+RFID-023,Pharma,Santo Niño,Tatalon,10,VH-023,DR-023,2026-05-07 13:00:00,2026-05-07 13:00:00,Delivered,None
+RFID-024,Industrial,Santa Cruz,Bel-Air,1,VH-024,DR-024,2026-05-06 00:00:00,2026-05-06 00:00:00,Delivered,None
+RFID-025,Pharma,Sucat,General Mariano Alvarez,4,VH-025,DR-025,2026-05-06 09:00:00,2026-05-06 16:00:00,Delayed,RFID flag
+RFID-026,Frozen,Sampaloc,Pateros,49,VH-026,DR-026,2026-05-04 09:00:00,2026-05-04 09:00:00,Delivered,None
+RFID-027,Industrial,Paco,Pansol,11,VH-027,DR-027,2026-05-04 18:00:00,2026-05-04 18:00:00,Delivered,None
+RFID-028,Pharma,Malabon,Paco,46,VH-028,DR-028,2026-05-06 13:00:00,2026-05-06 13:00:00,Delivered,None
+RFID-029,Clothing,Santa Ana,Santamesa,8,VH-029,DR-029,2026-05-06 21:00:00,2026-05-06 21:00:00,Delivered,None
+RFID-030,Pharma,Sampaloc,Mandaluyong City,1,VH-030,DR-030,2026-05-04 23:00:00,2026-05-05 09:00:00,Delayed,Weather
+RFID-031,Frozen,Caloocan City,Marikina Heights,33,VH-031,DR-031,2026-05-04 15:00:00,2026-05-04 17:00:00,Delayed,RFID flag
+RFID-032,Clothing,Sampaloc,Navotas,16,VH-032,DR-032,2026-05-06 21:00:00,2026-05-06 21:00:00,Delivered,None
+RFID-033,Dry Goods,Pansol,Malate,28,VH-033,DR-033,2026-05-06 10:00:00,2026-05-06 22:00:00,Delayed,Temp breach
+RFID-034,Frozen,Santamesa,Malate,4,VH-034,DR-034,2026-05-05 19:00:00,2026-05-05 19:00:00,Delivered,None
+RFID-035,Pharma,Poblacion,Bayanan,13,VH-035,DR-035,2026-05-07 16:00:00,2026-05-07 16:00:00,Delivered,None
+RFID-036,Cool-Chain,Las Piñas City,San Isidro,30,VH-036,DR-036,2026-05-06 11:00:00,2026-05-06 11:00:00,Delivered,None
+RFID-037,Industrial,Sampaloc,Pinyahan,7,VH-037,DR-037,2026-05-05 07:00:00,2026-05-05 07:00:00,Delivered,None
+RFID-038,Chill/Refrigerated,Davao,Bignay,27,VH-038,DR-038,2026-05-08 20:00:00,2026-05-08 23:00:00,Delayed,Weather
+RFID-039,Deep Freeze,Western Bicutan,Malate,11,VH-039,DR-039,2026-05-07 04:00:00,2026-05-07 04:00:00,Delivered,None
+RFID-040,Clothing,San Juan,Manila,19,VH-040,DR-040,2026-05-06 11:00:00,2026-05-06 11:00:00,Delivered,None
+RFID-041,Chill/Refrigerated,Rosario,Central Signal Village,13,VH-041,DR-041,2026-05-08 11:00:00,2026-05-08 11:00:00,Delivered,None
+RFID-042,Deep Freeze,Navotas,Pasay City,48,VH-042,DR-042,2026-05-05 14:00:00,2026-05-05 14:00:00,Delivered,None
+RFID-043,Industrial,General Mariano Alvarez,Davao,11,VH-043,DR-043,2026-05-05 13:00:00,2026-05-05 13:00:00,Delivered,None
+RFID-044,Pharma,Davao,Banco Filipino International Village,26,VH-044,DR-044,2026-05-06 10:00:00,2026-05-06 21:00:00,Delayed,Route change
+RFID-045,Frozen,Pasig City,Pateros,27,VH-045,DR-045,2026-05-06 14:00:00,2026-05-06 14:00:00,Delivered,None
+RFID-046,Cool-Chain,Bignay,Pateros,14,VH-046,DR-046,2026-05-08 03:00:00,2026-05-08 03:00:00,Delivered,None
+RFID-047,Chill/Refrigerated,Bignay,Marikina Heights,43,VH-047,DR-047,2026-05-06 01:00:00,2026-05-06 01:00:00,Delivered,None
+RFID-048,Frozen,Don Bosco,Santa Ana,1,VH-048,DR-048,2026-05-07 00:00:00,2026-05-07 00:00:00,Delivered,None
+RFID-049,Cool-Chain,Putatan,Tatalon,9,VH-049,DR-049,2026-05-07 00:00:00,2026-05-07 05:00:00,Delayed,Traffic
+RFID-050,Clothing,San Andres,Caloocan City,35,VH-050,DR-050,2026-05-06 00:00:00,2026-05-06 00:00:00,Delivered,None
